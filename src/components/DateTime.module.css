@@ -1,0 +1,24 @@
+.dateTimeContainer {
+  display: flex;
+  flex-direction: column;
+  color: var(--rgv-white);
+  font-size: 12px;
+  line-height: 1.2;
+  margin-right: 15px;
+}
+
+.date {
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.time {
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .dateTimeContainer {
+    font-size: 11px;
+    margin-right: 10px;
+  }
+}

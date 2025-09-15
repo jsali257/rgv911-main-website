@@ -1,0 +1,183 @@
+:root {
+  --rgv-blue-dark-rgb: 26, 47, 105; /* RGB values for var(--rgv-blue-dark) */
+  --rgv-gold-rgb: 218, 165, 32; /* RGB values for var(--rgv-gold) */
+}
+
+.whoWeAre {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 2rem;
+  color: var(--rgv-blue-dark);
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background-color: var(--rgv-gold);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 15px;
+}
+
+.subDescription {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.departments {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.department {
+  width: 100%;
+  position: relative;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.departmentTitle {
+  font-size: 1.5rem;
+  color: var(--rgv-blue-dark);
+  margin-bottom: 10px;
+  font-weight: 600;
+  display: block;
+}
+
+/* Different title colors for each department */
+.department:nth-child(1) .departmentTitle {
+  color: var(--rgv-blue-dark);
+}
+
+.department:nth-child(2) .departmentTitle {
+  color: var(--rgv-gold);
+}
+
+.department:nth-child(3) .departmentTitle {
+  color: #2c7be5;
+}
+
+.departmentDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footerText {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--rgv-blue-dark);
+  max-width: 800px;
+  margin: 0 auto;
+  font-style: italic;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .whoWeAre {
+    padding: 30px 0;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+
+  .departments {
+    gap: 15px;
+  }
+  
+  .department {
+    padding: 0;
+  }
+
+  .departmentTitle {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  
+  .departmentDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .footer {
+    margin-top: 15px;
+  }
+  
+  .footerText {
+    font-size: 1rem;
+  }
+}
+
+/* Animation for department cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.department {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.department:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.department:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.department:nth-child(3) {
+  animation-delay: 0.5s;
+}

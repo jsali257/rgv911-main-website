@@ -1,0 +1,127 @@
+.accessibilityContainer {
+  position: relative;
+}
+
+.accessibilityButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 4px;
+  color: var(--rgv-white);
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accessibilityButton:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.accessibilityButton svg {
+  width: 16px;
+  height: 16px;
+}
+
+.accessibilityPanel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 250px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-top: 8px;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+.accessibilityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: var(--rgv-blue-dark);
+  color: white;
+}
+
+.accessibilityHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.accessibilityOption {
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accessibilityOption span {
+  font-weight: 500;
+  color: #333;
+}
+
+.accessibilityControls {
+  display: flex;
+  gap: 8px;
+}
+
+.accessibilityControls button {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.accessibilityControls button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+.accessibilityControls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.accessibilityControls button.active {
+  background-color: var(--rgv-blue-dark);
+  color: white;
+  border-color: var(--rgv-blue-dark);
+}
+
+/* High contrast mode styles */
+:global(.high-contrast) {
+  filter: contrast(150%);
+}
+
+:global(.high-contrast) body {
+  background-color: #000;
+  color: #fff;
+}
+
+:global(.high-contrast) a {
+  color: #ffff00;
+}
+
+@media (max-width: 768px) {
+  .accessibilityPanel {
+    width: 220px;
+  }
+}
