@@ -1,5 +1,5 @@
 :root {
-  --rgv-blue: #1a2f69; /* RGV911 Logo Navy Blue */
+  --rgv-blue: #374d8a; /* Updated RGV911 Logo Navy Blue */
   --rgv-blue-dark: #14234d;
   --rgv-blue-light: #2a4080;
   --rgv-gold: #e6b012; /* RGV911 Logo Gold/Yellow */
@@ -40,7 +40,7 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-geist-sans);
-  background-color: var(--light);
+  background-color: #f8f9fa;
   color: var(--dark);
 }
 

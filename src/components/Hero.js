@@ -47,7 +47,7 @@ export default function Hero({
   }, [backgroundImages.length]);
 
   return (
-    <main className={styles.main} style={{ backgroundColor: '#000' }}>
+    <main className={styles.main} style={{ backgroundColor: '#374d8a' }}>
       {/* Background Image Slider */}
       <div className={styles.backgroundSlider}>
         {backgroundImages.map((image, index) => (

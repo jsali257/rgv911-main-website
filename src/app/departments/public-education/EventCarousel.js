@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import styles from './EventCarousel.module.css';
 
 export default function EventCarousel({ images }) {
@@ -40,10 +41,14 @@ export default function EventCarousel({ images }) {
   if (images.length <= 1) {
     return (
       <div className={styles.carouselContainer}>
-        <img 
+        <Image 
           src={images[0].url} 
           alt={images[0].originalFilename || "Event image"} 
           className={styles.carouselImage}
+          width={800}
+          height={600}
+          priority
+          quality={90}
         />
       </div>
     );
@@ -57,10 +62,13 @@ export default function EventCarousel({ images }) {
       >
         {images.map((image, index) => (
           <div className={styles.carouselSlide} key={index}>
-            <img 
+            <Image 
               src={image.url} 
               alt={image.originalFilename || `Event image ${index + 1}`} 
               className={styles.carouselImage}
+              width={800}
+              height={600}
+              quality={90}
             />
           </div>
         ))}

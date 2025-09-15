@@ -11,7 +11,7 @@ export default function QuickLinks() {
       title: "Board of Managers",
       icon: "/images/icons/board-icon.svg",
       href: "/board-of-managers",
-      color: "#1a2f69" // blue
+      color: "#374d8a" // updated blue
     },
     {
       title: "Agenda & Minutes",

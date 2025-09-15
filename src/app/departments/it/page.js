@@ -18,12 +18,14 @@ export default function ITDepartment() {
           <section className={styles.directorSection}>
             <div className={styles.directorProfile}>
               <div className={styles.directorImageContainer}>
-                <img 
+                <Image 
                   src="/images/directors/Dennis.jpg"
                   alt="Dennis Moreno - Assistant Director"
                   width={400}
                   height={500}
                   className={styles.directorImage}
+                  priority
+                  quality={100}
                 />
               </div>
               

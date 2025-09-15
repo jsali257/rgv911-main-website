@@ -75,12 +75,14 @@ export default function PublicEducationDepartment() {
           <section className={styles.directorSection}>
             <div className={styles.directorProfile}>
               <div className={styles.directorImageContainer}>
-                <img 
+                <Image 
                   src="/images/directors/maribel.jpg"
                   alt="Maribel Alonzo - Public Education Coordinator"
                   width={400}
                   height={500}
                   className={styles.directorImage}
+                  priority
+                  quality={100}
                 />
               </div>
               
@@ -213,10 +215,13 @@ export default function PublicEducationDepartment() {
                 </div>
               </div>
               <div className={styles.requestImageContainer}>
-                <img 
+                <Image 
                   src="/images/other/pubEdTeam.jpg" 
                   alt="RGV9-1-1 Public Education Team" 
                   className={styles.requestImage}
+                  width={600}
+                  height={400}
+                  quality={100}
                 />
               </div>
             </div>

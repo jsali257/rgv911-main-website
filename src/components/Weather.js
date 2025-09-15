@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import styles from './Weather.module.css';
 
 export default function Weather() {
@@ -57,10 +58,14 @@ export default function Weather() {
   return (
     <div className={styles.weatherWidget}>
       <div className={styles.weatherContent}>
-        <img 
+        <Image 
           src={iconUrl} 
           alt={description} 
-          className={styles.weatherIcon} 
+          className={styles.weatherIcon}
+          width={50}
+          height={50}
+          quality={90}
+          unoptimized
         />
         <div className={styles.weatherInfo}>
           <div className={styles.weatherTemp}>{temp}°</div>
