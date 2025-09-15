@@ -3,12 +3,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import styles from "./Navbar.module.css";
 import Weather from "./Weather";
 import DateTime from "./DateTime";
-import Accessibility from "./Accessibility";
+// Accessibility component removed
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [departmentsOpen, setDepartmentsOpen] = useState(false);
   const [requestsOpen, setRequestsOpen] = useState(false);
@@ -67,21 +69,9 @@ export default function Navbar() {
             {/* Phone number removed from left side */}
           </div>
           
-          <div className={styles.topNavCenter}>
-            <div className={styles.searchContainer}>
-              <input 
-                type="text" 
-                placeholder="Search..." 
-                className={styles.searchInput} 
-              />
-              <button className={styles.searchButton}>
-                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-                </svg>
-              </button>
-            </div>
-          </div>
+          {/* Search bar removed */}
           
+          {/* Search bar removed */}
           <div className={styles.topNavRight}>
             <div className={styles.topNavLinks}>
               <Link href="/about" className={styles.topNavLink}>About Us</Link>
@@ -97,12 +87,12 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.phoneNumber}>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-            </svg>
-            <a href="tel:9566823481" className={styles.phoneLink}>(956) 682-3481</a>
+            <div className={styles.phoneNumber}>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <a href="tel:9566823481" className={styles.phoneLink}>(956) 682-3481</a>
+            </div>
           </div>
         </div>
       </div>
@@ -147,7 +137,7 @@ export default function Navbar() {
 
         <ul className={styles.navLinks}>
           <li>
-            <Link href="/" className={styles.navLink} style={{ "--animation-order": 1 }}>
+            <Link href="/" className={`${styles.navLink} ${pathname === '/' ? styles.active : ''}`} style={{ "--animation-order": 1 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
               </svg>
@@ -155,7 +145,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/executive-director" className={styles.navLink} style={{ "--animation-order": 2 }}>
+            <Link href="/executive-director" className={`${styles.navLink} ${pathname === '/executive-director' ? styles.active : ''}`} style={{ "--animation-order": 2 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
               </svg>
@@ -163,7 +153,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/board-of-managers" className={styles.navLink} style={{ "--animation-order": 3 }}>
+            <Link href="/board-of-managers" className={`${styles.navLink} ${pathname === '/board-of-managers' ? styles.active : ''}`} style={{ "--animation-order": 3 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
               </svg>
@@ -171,7 +161,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/meetings" className={styles.navLink} style={{ "--animation-order": 4 }}>
+            <Link href="/meetings" className={`${styles.navLink} ${pathname === '/meetings' ? styles.active : ''}`} style={{ "--animation-order": 4 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
               </svg>
@@ -179,7 +169,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className={styles.dropdown}>
-            <div className={styles.navLink} style={{ "--animation-order": 5 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/departments') ? styles.active : ''}`} style={{ "--animation-order": 5 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
               </svg>
@@ -210,7 +200,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className={styles.dropdown}>
-            <div className={styles.navLink} style={{ "--animation-order": 6 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/requests') ? styles.active : ''}`} style={{ "--animation-order": 6 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clipRule="evenodd" />
               </svg>
@@ -285,7 +275,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className={styles.dropdown}>
-            <div className={styles.navLink} style={{ "--animation-order": 7 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/resources') ? styles.active : ''}`} style={{ "--animation-order": 7 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
               </svg>
@@ -310,7 +300,7 @@ export default function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="/faq" className={styles.navLink} style={{ "--animation-order": 8 }}>
+            <Link href="/faq" className={`${styles.navLink} ${pathname === '/faq' ? styles.active : ''}`} style={{ "--animation-order": 8 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
               </svg>
@@ -340,31 +330,17 @@ export default function Navbar() {
           </div>
         </div>
         
-        {/* Weather and Accessibility Section */}
+        {/* Weather Section */}
         <div className={styles.sidebarTools}>
           <div className={styles.sidebarWeather}>
             <Weather />
           </div>
-          <div className={styles.sidebarAccessibility}>
-            <Accessibility />
-          </div>
-          <div className={styles.sidebarSearch}>
-            <input 
-              type="text" 
-              placeholder="Search..." 
-              className={styles.sidebarSearchInput} 
-            />
-            <button className={styles.sidebarSearchButton}>
-              <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-              </svg>
-            </button>
-          </div>
+          {/* Search bar removed */}
         </div>
         
         
         <div className={styles.sidebarNav}>
-        <Link href="/" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/" className={`${styles.sidebarLink} ${pathname === '/' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
           </svg>

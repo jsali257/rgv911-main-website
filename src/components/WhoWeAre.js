@@ -28,7 +28,7 @@ export default function WhoWeAre() {
           <div className={styles.department}>
             <h3 className={styles.departmentTitle}>GIS Department</h3>
             <p className={styles.departmentDescription}>
-              RGV911's Addressing Department maintains and updates the addressing systems that emergency responders 
+              RGV911&apos;s Addressing Department maintains and updates the addressing systems that emergency responders 
               rely on to locate residents and businesses quickly and accurately. Our team collaborates closely with 
               local governments and emergency services to ensure that every address in Hidalgo and Willacy counties 
               is correctly recorded and accessible.

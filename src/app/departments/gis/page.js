@@ -51,7 +51,7 @@ export default function GISDepartment() {
               
               <div className={styles.departmentInfo}>
                 <p>
-                  In 2021, The Rio Grande Valley Emergency Communication District (RGV9-1-1) completed the transition from a tabular 9-1-1 database (MSAG) in the GIS driven GeoMSAG. This GeoMSAG is used in our 9-1-1 network to route 9-1-1 calls to its corresponding Public Safety Answering Point (PSAP). Our RGV9-1-1 team migrated from ESRI's ArcMap 10.7.1 software to ArcGIS Pro 2.8.1 and began using ESRI's Address Data Management Toolset.
+                  In 2021, The Rio Grande Valley Emergency Communication District (RGV9-1-1) completed the transition from a tabular 9-1-1 database (MSAG) in the GIS driven GeoMSAG. This GeoMSAG is used in our 9-1-1 network to route 9-1-1 calls to its corresponding Public Safety Answering Point (PSAP). Our RGV9-1-1 team migrated from ESRI&apos;s ArcMap 10.7.1 software to ArcGIS Pro 2.8.1 and began using ESRI&apos;s Address Data Management Toolset.
                 </p>
                 
                 <p>

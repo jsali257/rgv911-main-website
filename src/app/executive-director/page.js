@@ -39,7 +39,7 @@ export default function ExecutiveDirector() {
               </p>
               
               <p>
-                These past two years, 2021 and 2022, have been nothing less than critical and unprecedented for 9-1-1. What a time for change it's been for the district despite the unfolding of some of the greatest global challenges in recent times, the ongoing pandemic. The rewards of endless hours of collaboration and effort enabled to accomplish many achievements.
+                These past two years, 2021 and 2022, have been nothing less than critical and unprecedented for 9-1-1. What a time for change it&apos;s been for the district despite the unfolding of some of the greatest global challenges in recent times, the ongoing pandemic. The rewards of endless hours of collaboration and effort enabled to accomplish many achievements.
               </p>
               
               <p>
@@ -58,7 +58,7 @@ export default function ExecutiveDirector() {
               </p>
               
               <p>
-                As we have adjust to the "new normal" the mission of the RGV9-1-1 remains unchanged: To help our county partners sustain their public safety operations through a collaborative approach of financial management, operational guidance, and strategic planning.
+                As we have adjust to the &quot;new normal&quot; the mission of the RGV9-1-1 remains unchanged: To help our county partners sustain their public safety operations through a collaborative approach of financial management, operational guidance, and strategic planning.
               </p>
               
               <div className={styles.quoteContainer}>

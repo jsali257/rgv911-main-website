@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
         <style dangerouslySetInnerHTML={{ __html: `
           @media (max-width: 482px) {
             html, body {

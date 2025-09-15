@@ -199,7 +199,7 @@ export default function PublicEducationDepartment() {
               <div className={styles.requestContent}>
                 <h3 className={styles.requestHeading}>Request Our Team at Your Event</h3>
                 <p>Would you like the RGV9-1-1 Public Education team to participate in your community event?</p>
-                <p>We're available to provide valuable information about emergency services, 9-1-1 education, and safety awareness to your organization, school, or community gathering.</p>
+                <p>We&apos;re available to provide valuable information about emergency services, 9-1-1 education, and safety awareness to your organization, school, or community gathering.</p>
                 <p>Complete our online form to request the RGV9-1-1 team at your next event!</p>
                 <div className={styles.requestButtonContainer}>
                   <a 

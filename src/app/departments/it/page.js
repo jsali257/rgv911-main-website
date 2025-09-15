@@ -55,7 +55,7 @@ export default function ITDepartment() {
                 </p>
                 
                 <p>
-                  NG9-1-1 is identified as a "system-of-systems" and "network-of-networks," that links our Public Safety Answering Points (PSAP) directly into emergency services networks by utilizing NG9-1-1 Core Services (NGCS). This provides the capability to reroute emergency calls quickly and easily to another PSAP when the primary answering point is unavailable or overloaded.
+                  NG9-1-1 is identified as a &quot;system-of-systems&quot; and &quot;network-of-networks,&quot; that links our Public Safety Answering Points (PSAP) directly into emergency services networks by utilizing NG9-1-1 Core Services (NGCS). This provides the capability to reroute emergency calls quickly and easily to another PSAP when the primary answering point is unavailable or overloaded.
                 </p>
                 
                 <p>
