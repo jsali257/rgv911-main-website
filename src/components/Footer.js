@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -44,6 +45,18 @@ export default function Footer() {
           <p>Weslaco, TX 78596</p>
           <p>Phone: (956) 682-3481</p>
           <p>Email: info@rgv911.org</p>
+          
+          <div className={styles.socialLinks}>
+            <a href="https://www.facebook.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <FaFacebookF />
+            </a>
+            <a href="https://twitter.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+              <FaTwitter />
+            </a>
+            <a href="https://www.instagram.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <FaInstagram />
+            </a>
+          </div>
           <div className={styles.locationMap}>
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.6923582576747!2d-97.99425692393055!3d26.16063608971204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866578ef3a5e9d5d%3A0x7c0b7a2e2c3b4c5d!2s301%20W%20Railroad%20St%2C%20Weslaco%2C%20TX%2078596!5e0!3m2!1sen!2sus!4v1694733456789!5m2!1sen!2sus" 

@@ -2,21 +2,23 @@
   position: relative;
   z-index: 10;
   margin-top: -40px; /* Position it to overlap with the hero section */
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding: 0 20px;
 }
 
 .quickLinks {
   max-width: 1000px;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px 20px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 16px;
 }
 
 .quickLinkItem {
@@ -26,29 +28,52 @@
   text-decoration: none;
   flex: 1;
   min-width: 120px;
-  padding: 15px 10px;
-  border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 12px 8px;
+  border-radius: var(--radius-lg);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.quickLinkItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .quickLinkItem:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-lg);
+}
+
+.quickLinkItem:hover::before {
+  opacity: 1;
 }
 
 .iconContainer {
-  width: 60px;
-  height: 60px;
-  border-radius: 8px;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-lg);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
-  transition: transform 0.3s ease;
+  margin-bottom: 8px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  z-index: 1;
+  box-shadow: var(--shadow-md);
 }
 
 .quickLinkItem:hover .iconContainer {
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: var(--shadow-lg);
 }
 
 .iconFallback {
@@ -58,11 +83,18 @@
 }
 
 .quickLinkTitle {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #333;
+  color: var(--rgv-gray-dark);
   text-align: center;
-  margin-top: 5px;
+  margin-top: 6px;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+}
+
+.quickLinkItem:hover .quickLinkTitle {
+  color: var(--rgv-blue);
 }
 
 /* Responsive styles */

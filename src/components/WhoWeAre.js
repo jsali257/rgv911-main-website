@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from './WhoWeAre.module.css';
+import StatsIndicators from './StatsIndicators';
 
 export default function WhoWeAre() {
   // State to track which department is active for mobile view
@@ -21,6 +22,10 @@ export default function WhoWeAre() {
           <p className={styles.subDescription}>
             Our agency comprises three key departments, each with specialized roles:
           </p>
+          
+          <div className={styles.statsSection}>
+            <StatsIndicators />
+          </div>
         </div>
 
         <div className={styles.departments}>

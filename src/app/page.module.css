@@ -1,15 +1,29 @@
 :root {
   --rgv-blue: #374d8a; /* Updated RGV911 Logo Navy Blue */
   --rgv-blue-dark: #14234d;
-  --rgv-blue-light: #2a4080;
-  --rgv-gold: #e6b012; /* RGV911 Logo Gold/Yellow */
-  --rgv-gold-dark: #c99a10;
-  --rgv-gold-light: #f8c835;
-  --rgv-gray: #d1d5db;
-  --rgv-gray-light: #f3f4f6;
+  --rgv-blue-light: #4a5fa8; /* Lighter, more accessible blue */
+  --rgv-gold: #daa520; /* Perfect modern gold */
+  --rgv-gold-dark: #b8941a;
+  --rgv-gold-light: #f4c430;
+  --rgv-gray: #64748b; /* Modern medium gray */
+  --rgv-gray-light: #f8fafc; /* Modern light background */
+  --rgv-gray-dark: #1e293b; /* Modern dark text */
   --rgv-white: #ffffff;
   --rgv-black: #111827;
   --rgv-red: #dc2626; /* For 911 text in logo */
+  
+  /* Modern shadow system */
+  --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Modern border radius system */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
   
   /* Reassigning for compatibility */
   --primary: var(--rgv-blue);
@@ -40,8 +54,74 @@
   display: flex;
   flex-direction: column;
   font-family: var(--font-geist-sans);
-  background-color: #f8f9fa;
-  color: var(--dark);
+  background-color: var(--rgv-gray-light);
+  color: var(--rgv-gray-dark);
+  position: relative;
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.fullWidthContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.quickHelpWrapper {
+  background-color: #f5f7ff;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.smartSearchSection {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 20;
+}
+
+.quickHelpWrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.mainContent {
+  flex: 1;
+}
+
+.sidebar {
+  width: 350px;
+  margin-top: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
 }
 
 /* Dropdown Menu Styles */

@@ -1,7 +1,7 @@
 /* Navigation Styles */
 /* Top Navigation Bar */
 .topNavbar {
-  background-color: #374d8a; /* Hardcoded dark blue color for consistency */
+  background-color: #1e293b; /* Dark slate gray */
   color: var(--rgv-white);
   padding: 6px 0;
   width: 100%;
@@ -33,15 +33,23 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex: 1;
+  min-width: 0;
 }
 
 .phoneNumber {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #fbc800;
+  color: var(--rgv-white);
   margin-left: 20px;
-  margin-right: 0;
+  margin-right: 15px;
+}
+
+.navbarSearchContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
 }
 
 .phoneLink {
@@ -56,11 +64,40 @@
   text-decoration: underline;
 }
 
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: 5px;
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--rgv-white);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.socialIcons a:hover {
+  background-color: var(--rgv-gold);
+  color: var(--rgv-blue-dark);
+  transform: translateY(-3px);
+}
+
 .topNavLinks {
   display: flex;
   align-items: center;
+  gap: 20px;
+  flex-shrink: 1;
+  min-width: 0;
   margin-left: auto; /* Push links to the right */
-  gap: 15px;
 }
 
 .topNavLink {

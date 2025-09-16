@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import { FaCalendarAlt, FaInfoCircle, FaMobileAlt } from 'react-icons/fa';
 import styles from './PublicEducation.module.css';
 
 export default function PublicEducation() {
@@ -11,49 +12,60 @@ export default function PublicEducation() {
   return (
     <section className={styles.publicEducation}>
       <div className={styles.container}>
-        <div className={styles.educationSection}>
-          <div className={styles.educationContent}>
-            <div className={styles.textContent}>
-              <h2 className={styles.title}>Public Education & Outreach</h2>
-              <p className={styles.description}>
-                Our Public Education team is dedicated to community safety and awareness through education about 
-                emergency communications and the 911 system. We offer presentations, workshops, and resources 
-                tailored to various audiences, including schools, community organizations, and businesses.
-              </p>
-              <p className={styles.description}>
-                Learn about:
-              </p>
-              <ul className={styles.educationList}>
-                <li>When and how to call 911</li>
-                <li>What happens when you contact emergency services</li>
-                <li>How to prepare for emergencies</li>
-                <li>The importance of knowing your exact address</li>
-                <li>Text-to-911 capabilities and limitations</li>
-              </ul>
-              <p className={styles.description}>
-                Request our team to attend your event or schedule a presentation for your organization by clicking the button below.
-              </p>
-              <button 
-                onClick={handleEventRequest}
-                className={styles.requestButton}
-              >
-                Request Event or Presentation
-              </button>
-            </div>
-          </div>
-          
-          <div className={styles.imageContainer}>
-            <div className={styles.imageWrapper}>
-              <Image 
-                src="/images/icons/emergencyIcon.png" 
-                alt="Emergency Education Icon" 
-                width={200} 
-                height={200}
-                className={styles.educationImage}
-                quality={100}
-                priority
-              />
-            </div>
+        <div className={styles.header}>
+          <h2 className={styles.title}>Public Education & Outreach</h2>
+          <p className={styles.description}>
+            Our Public Education team is dedicated to community safety and awareness through education about 
+            emergency communications and the 911 system. We offer presentations, workshops, and resources 
+            tailored to various audiences, including schools, community organizations, and businesses.
+          </p>
+          <p className={styles.description}>
+            Learn about:
+          </p>
+          <ul className={styles.educationList}>
+            <li>When and how to call 911</li>
+            <li>What happens when you contact emergency services</li>
+            <li>How to prepare for emergencies</li>
+            <li>The importance of knowing your exact address</li>
+            <li>Text-to-911 capabilities and limitations</li>
+          </ul>
+          <p className={styles.description}>
+            Request our team to attend your event or schedule a presentation for your organization by clicking the button below.
+          </p>
+          <button 
+            onClick={handleEventRequest}
+            className={styles.requestButton}
+          >
+            <FaCalendarAlt className={styles.buttonIcon} /> Request Event or Presentation
+          </button>
+        </div>
+        
+        <div className={styles.verificationSection}>
+          <div className={styles.header}>
+            <h2 className={styles.title}>
+              <span className={styles.text911Highlight}>Text 911</span>
+              <span className={styles.text911Badge}>Now Available</span>
+            </h2>
+            <p className={styles.description}>
+              In an emergency, when calling 911 isn&apos;t possible, you now have the option to text 911 for help. Texting
+              911 is especially helpful for individuals who are deaf, hard of hearing, or speech-impaired, and in
+              situations where speaking could put someone in danger.
+            </p>
+            <ol className={styles.instructionsList}>
+              <li>Enter &quot;911&quot; in the recipient field of your text message</li>
+              <li>Type your emergency situation and exact location</li>
+              <li>Send the text and wait for a response</li>
+              <li>Be prepared to answer questions from the dispatcher</li>
+            </ol>
+            <p className={styles.description}>
+              <strong>Important:</strong> Calling is still the fastest way to reach help, but texting 911 is a valuable alternative when you need it most.
+            </p>
+            <button 
+              onClick={() => window.open('https://www.fcc.gov/consumers/guides/what-you-need-know-about-text-911', '_blank')}
+              className={`${styles.requestButton} ${styles.mapButton}`}
+            >
+              <FaMobileAlt className={styles.buttonIcon} /> Learn More About Text-to-911
+            </button>
           </div>
         </div>
       </div>

@@ -5,37 +5,42 @@ import Image from 'next/image';
 import styles from './QuickLinks.module.css';
 
 export default function QuickLinks() {
-  // Define quick links data
+  // Define quick links data with modern color scheme
   const quickLinks = [
     {
       title: "Board of Managers",
       icon: "/images/icons/board-icon.svg",
       href: "/board-of-managers",
-      color: "#374d8a" // updated blue
+      color: "#374d8a", // primary blue
+      gradient: "linear-gradient(135deg, #374d8a 0%, #4a5fa8 100%)"
     },
     {
       title: "Agenda & Minutes",
       icon: "/images/icons/agenda-icon.svg",
       href: "/agenda-minutes",
-      color: "#daa520" // gold
+      color: "#daa520", // gold
+      gradient: "linear-gradient(135deg, #daa520 0%, #f4c430 100%)"
     },
     {
       title: "Contact Us",
       icon: "/images/icons/contact-icon.svg",
       href: "/contact",
-      color: "#20c997" // teal
+      color: "#059669", // modern emerald
+      gradient: "linear-gradient(135deg, #059669 0%, #10b981 100%)"
     },
     {
       title: "Maps & Data",
       icon: "/images/icons/map-icon.svg",
       href: "/maps",
-      color: "#2c7be5" // light blue
+      color: "#0ea5e9", // modern sky blue
+      gradient: "linear-gradient(135deg, #0ea5e9 0%, #38bdf8 100%)"
     },
     {
       title: "Resources",
       icon: "/images/icons/resources-icon.svg",
       href: "/resources",
-      color: "#e63757" // red
+      color: "#dc2626", // modern red
+      gradient: "linear-gradient(135deg, #dc2626 0%, #f87171 100%)"
     }
   ];
 
@@ -46,11 +51,11 @@ export default function QuickLinks() {
           <Link href={link.href} key={index} className={styles.quickLinkItem}>
             <div 
               className={styles.iconContainer} 
-              style={{ backgroundColor: link.color }}
+              style={{ background: link.gradient }}
             >
               {/* Fallback to a simple SVG if the icon doesn't exist */}
               <div className={styles.iconFallback}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                   {index === 0 && ( // Board of Managers icon
                     <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4zm6.08-12h-3.29c.49.79.8 1.71.8 2.7 0 1-.31 1.92-.8 2.7h3.29c.45 0 .81-.36.81-.81V3.81c0-.45-.36-.81-.81-.81zM3.81 2H7.1c-.49.79-.8 1.71-.8 2.7 0 1 .31 1.92.8 2.7H3.81c-.45 0-.81-.36-.81-.81V2.81c0-.45.36-.81.81-.81z" />
                   )}

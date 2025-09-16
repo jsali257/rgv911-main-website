@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import styles from "./Navbar.module.css";
 import Weather from "./Weather";
 import DateTime from "./DateTime";
+import NavbarSearch from "./NavbarSearch";
 // Accessibility component removed
 
 export default function Navbar() {
@@ -87,11 +89,25 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+            <div className={styles.navbarSearchContainer}>
+              <NavbarSearch />
+            </div>
             <div className={styles.phoneNumber}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
               </svg>
               <a href="tel:9566823481" className={styles.phoneLink}>(956) 682-3481</a>
+            </div>
+            <div className={styles.socialIcons}>
+              <a href="https://www.facebook.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <FaFacebookF />
+              </a>
+              <a href="https://twitter.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <FaTwitter />
+              </a>
+              <a href="https://www.instagram.com/rgv911" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                <FaInstagram />
+              </a>
             </div>
           </div>
         </div>
@@ -161,7 +177,15 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/meetings" className={`${styles.navLink} ${pathname === '/meetings' ? styles.active : ''}`} style={{ "--animation-order": 4 }}>
+            <Link href="/team" className={`${styles.navLink} ${pathname === '/team' ? styles.active : ''}`} style={{ "--animation-order": 4 }}>
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+              </svg>
+              Meet Our Team
+            </Link>
+          </li>
+          <li>
+            <Link href="/meetings" className={`${styles.navLink} ${pathname === '/meetings' ? styles.active : ''}`} style={{ "--animation-order": 5 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
               </svg>
@@ -169,7 +193,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li className={styles.dropdown}>
-            <div className={`${styles.navLink} ${pathname.includes('/departments') ? styles.active : ''}`} style={{ "--animation-order": 5 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/departments') ? styles.active : ''}`} style={{ "--animation-order": 6 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
               </svg>
@@ -200,7 +224,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className={styles.dropdown}>
-            <div className={`${styles.navLink} ${pathname.includes('/requests') ? styles.active : ''}`} style={{ "--animation-order": 6 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/requests') ? styles.active : ''}`} style={{ "--animation-order": 7 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm-1 9v-1h5v2H5a1 1 0 01-1-1zm7 1h4a1 1 0 001-1v-1h-5v2zm0-4h5V8h-5v2zM9 8H4v2h5V8z" clipRule="evenodd" />
               </svg>
@@ -275,7 +299,7 @@ export default function Navbar() {
             </div>
           </li>
           <li className={styles.dropdown}>
-            <div className={`${styles.navLink} ${pathname.includes('/resources') ? styles.active : ''}`} style={{ "--animation-order": 7 }}>
+            <div className={`${styles.navLink} ${pathname.includes('/resources') ? styles.active : ''}`} style={{ "--animation-order": 8 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM11 13a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
               </svg>
@@ -300,7 +324,7 @@ export default function Navbar() {
             </div>
           </li>
           <li>
-            <Link href="/faq" className={`${styles.navLink} ${pathname === '/faq' ? styles.active : ''}`} style={{ "--animation-order": 8 }}>
+            <Link href="/faq" className={`${styles.navLink} ${pathname === '/faq' ? styles.active : ''}`} style={{ "--animation-order": 9 }}>
               <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
               </svg>
@@ -359,6 +383,13 @@ export default function Navbar() {
             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
           </svg>
           Board of Managers
+        </Link>
+        
+        <Link href="/team" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+            <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
+          </svg>
+          Meet Our Team
         </Link>
         
         <Link href="/meetings" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>

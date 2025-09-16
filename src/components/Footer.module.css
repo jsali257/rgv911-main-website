@@ -1,6 +1,6 @@
 /* Footer Styles */
 .footer {
-  background-color: #0a1124;
+  background-color: var(--rgv-blue-dark);
   color: var(--rgv-white);
   padding: 60px 0 0 0;
   position: relative;
@@ -81,6 +81,31 @@
 .footerLinks a:hover {
   color: var(--rgv-gold);
   text-decoration: underline;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.socialLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--rgv-white);
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.socialLinks a:hover {
+  background-color: var(--rgv-gold);
+  color: var(--rgv-blue-dark);
+  transform: translateY(-3px);
 }
 
 .footerBottom {
