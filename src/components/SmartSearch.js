@@ -85,7 +85,7 @@ export default function SmartSearch() {
     } else {
       setSuggestions([]);
     }
-  }, [searchQuery]);
+  }, [searchQuery, searchSuggestions]);
 
   // Handle search input changes
   const handleSearchChange = (e) => {

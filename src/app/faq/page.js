@@ -76,14 +76,14 @@ export default function FAQ() {
       question: "What is a Legal Description?",
       answer: (
         <>
-          <p>A Legal Description is the official way to precisely describe a property's location for legal and tax purposes. It usually includes:</p>
+          <p>A Legal Description is the official way to precisely describe a property&apos;s location for legal and tax purposes. It usually includes:</p>
           <ul>
             <li>The name of the subdivision</li>
             <li>The lot number within the subdivision</li>
             <li>Or, for undeveloped land, a description of the land or acreage purchased</li>
           </ul>
           <p>This description helps identify the exact boundaries and location of your property in official records.</p>
-          <p>For more details or to find your property's legal description, visit your local appraisal district:</p>
+          <p>For more details or to find your property&apos;s legal description, visit your local appraisal district:</p>
           <ul>
             <li><a href="https://hidalgoad.org" target="_blank" rel="noopener noreferrer" className={styles.linkText}>Hidalgo County Appraisal District <FaExternalLinkAlt className={styles.smallIcon} /></a></li>
             <li><a href="https://willacycad.org" target="_blank" rel="noopener noreferrer" className={styles.linkText}>Willacy County Appraisal District <FaExternalLinkAlt className={styles.smallIcon} /></a></li>
@@ -126,7 +126,7 @@ export default function FAQ() {
             <li>Hidalgo County Tax Office — Phone: <a href="tel:9563818466" className={styles.linkText}>(956) 381-8466</a> | Website: <a href="https://hidalgoad.org" target="_blank" rel="noopener noreferrer" className={styles.linkText}>hidalgoad.org <FaExternalLinkAlt className={styles.smallIcon} /></a></li>
             <li>Willacy County Tax Office — Phone: <a href="tel:9566895979" className={styles.linkText}>(956) 689-5979</a> | Website: <a href="https://willacycad.org" target="_blank" rel="noopener noreferrer" className={styles.linkText}>willacycad.org <FaExternalLinkAlt className={styles.smallIcon} /></a></li>
           </ul>
-          <p>Be ready to provide your property's legal description or address to assist them in locating your records quickly.</p>
+          <p>Be ready to provide your property&apos;s legal description or address to assist them in locating your records quickly.</p>
         </>
       )
     },
@@ -142,19 +142,19 @@ export default function FAQ() {
     },
     {
       question: "Why is my city 9-1-1 address different from my mailing address?",
-      answer: "Your 9-1-1 address is assigned based on your property's geographic location to help emergency responders find you quickly and accurately. In contrast, your mailing address is determined by the United States Postal Service (USPS) based on mail delivery routes and post office locations. Because these systems serve different purposes, the city names or addresses may not always match."
+      answer: "Your 9-1-1 address is assigned based on your property&apos;s geographic location to help emergency responders find you quickly and accurately. In contrast, your mailing address is determined by the United States Postal Service (USPS) based on mail delivery routes and post office locations. Because these systems serve different purposes, the city names or addresses may not always match."
     },
     {
       question: "How Do I Name the Road I Live On In Hidalgo County?",
       answer: (
         <>
-          <p>If you need to name the road where you live for 9-1-1 addressing purposes in Hidalgo County and outside of city limits, here's how to get started:</p>
+          <p>If you need to name the road where you live for 9-1-1 addressing purposes in Hidalgo County and outside of city limits, here&apos;s how to get started:</p>
           <ol>
             <li><strong>Contact Your Local Precinct</strong><br />They will provide you with a form that you need to complete in order to name your Service Road.</li>
             <li><strong>Choose Road Names</strong><br />Come up with three potential names for the county to review.</li>
             <li><strong>Gather Support</strong><br />Collect signatures from nearby property owners who agree with the proposed names.</li>
             <li><strong>Submit Your Petition</strong><br />Once the form is complete, submit it to your local precinct office. After your petition is received, the precinct will notify the RGV9-1-1 department to begin the review process.</li>
-            <li><strong>Next Steps</strong><br />After initial review the precinct will approve the street name via commissioner's court. Once they approve, the precinct will submit the approval documentation to RGV9-1-1 and we will add the Service Road to the 9-1-1 map.</li>
+            <li><strong>Next Steps</strong><br />After initial review the precinct will approve the street name via commissioner&apos;s court. Once they approve, the precinct will submit the approval documentation to RGV9-1-1 and we will add the Service Road to the 9-1-1 map.</li>
           </ol>
           <p>You can find your precinct on the official map here: <a href="https://www.hidalgocounty.us/DocumentCenter/View/31860/Hidalgo-County-Precinct-Map" target="_blank" rel="noopener noreferrer" className={styles.linkText}>Hidalgo County Precinct Map (PDF) <FaExternalLinkAlt className={styles.smallIcon} /></a></p>
           <p>For more information or to contact your precinct office, visit the <a href="https://www.hidalgocounty.us/156/Commissioners-Court" target="_blank" rel="noopener noreferrer" className={styles.linkText}>Hidalgo County Commissioners Court page <FaExternalLinkAlt className={styles.smallIcon} /></a>.</p>

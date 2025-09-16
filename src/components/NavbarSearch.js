@@ -51,7 +51,7 @@ export default function NavbarSearch() {
     } else {
       setSuggestions([]);
     }
-  }, [searchQuery]);
+  }, [searchQuery, searchSuggestions]);
 
   // Toggle search expansion
   const toggleSearch = () => {

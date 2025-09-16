@@ -256,7 +256,7 @@ export default function RoadNamingGuidelines() {
             <h2>Road Naming Authority</h2>
             <p>
               Except as otherwise set forth in these guidelines, final authority for road names rests with the
-              County Commissioner's Court for roads in the unincorporated areas of the county, and with the
+              County Commissioner&apos;s Court for roads in the unincorporated areas of the county, and with the
               Councils of the Cities for roads within their respective jurisdictions.
             </p>
           </section>
@@ -292,7 +292,7 @@ export default function RoadNamingGuidelines() {
               </li>
               <li>If an existing road requires renaming because of duplication within a service area,
                 because of non-compliance with these guidelines, or for one or more of the other reasons
-                listed in Section 508, Paragraph "A", the procedures of Section 509 shall be followed.</li>
+                listed in Section 508, Paragraph &quot;A&quot;, the procedures of Section 509 shall be followed.</li>
             </ol>
           </section>
           

@@ -52,13 +52,14 @@ export default function StatsSection() {
       { threshold: 0.2 }
     );
     
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentRef = sectionRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
     
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
@@ -91,7 +92,7 @@ export default function StatsSection() {
       timer = setInterval(updateCount, incrementTime);
       
       return () => clearInterval(timer);
-    }, [value, duration, isVisible]);
+    }, [value, duration]);
     
     return (
       <span>
@@ -108,7 +109,7 @@ export default function StatsSection() {
           <h2 className={styles.sectionTitle}>Our Impact</h2>
           <p className={styles.sectionDescription}>
             RGV 9-1-1 serves the Rio Grande Valley with reliable emergency communication services.
-            Here's how we're making a difference:
+            Here&apos;s how we&apos;re making a difference:
           </p>
         </div>
         
