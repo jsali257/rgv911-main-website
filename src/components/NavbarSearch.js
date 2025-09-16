@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useMemo } from 'react';
 import styles from './NavbarSearch.module.css';
 
 export default function NavbarSearch() {
@@ -11,14 +11,14 @@ export default function NavbarSearch() {
   const inputRef = useRef(null);
   
   // Sample search suggestions - in a real app, this would come from an API
-  const searchSuggestions = [
+  const searchSuggestions = useMemo(() => [
     { text: "How to request a 911 address", url: "/how-do-i/request-address" },
     { text: "Board of managers meeting schedule", url: "/meetings" },
     { text: "Contact information for GIS department", url: "/departments/gis" },
     { text: "Text to 911 capabilities", url: "/text-911" },
     { text: "Public education resources", url: "/departments/public-education" },
     { text: "Emergency preparedness", url: "/resources" }
-  ];
+  ], []);
 
   // Handle click outside to close expanded search
   useEffect(() => {

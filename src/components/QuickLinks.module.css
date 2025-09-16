@@ -2,12 +2,12 @@
   position: relative;
   z-index: 10;
   margin-top: -40px; /* Position it to overlap with the hero section */
-  margin-bottom: 60px;
+  margin-bottom: 20px; /* Reduced from 60px to 20px */
   padding: 0 20px;
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  padding-bottom: 60px; /* Add padding for the curved shape */
+  padding-bottom: 30px; /* Reduced from 60px to 30px */
   background-image: radial-gradient(circle at 10% 10%, rgba(55, 77, 138, 0.03) 0%, transparent 20%),
                   radial-gradient(circle at 90% 90%, rgba(55, 77, 138, 0.03) 0%, transparent 20%);
   background-size: 60px 60px;

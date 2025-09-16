@@ -46,6 +46,7 @@ export default function PublicEducation() {
           </ul>
           <p className={styles.description}>
             Request our team to attend your event or schedule a presentation for your organization by clicking the button below.
+            You can also contact us directly at <a href="mailto:events@rgv911.org" className={styles.emailLink}>events@rgv911.org</a> for any event inquiries.
           </p>
           <button 
             onClick={handleEventRequest}
