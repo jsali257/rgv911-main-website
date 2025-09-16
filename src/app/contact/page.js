@@ -5,6 +5,7 @@ import styles from "./page.module.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
+import Breadcrumb from "../../components/Breadcrumb";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -63,6 +64,7 @@ export default function Contact() {
       <main className={styles.main}>
         <section className={styles.contactSection}>
           <div className={styles.container}>
+            <Breadcrumb />
             <div className={styles.contactGrid}>
               <div className={styles.contactInfo}>
                 <h2>Contact Information</h2>

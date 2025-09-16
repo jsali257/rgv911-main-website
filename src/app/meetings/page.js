@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import styles from './page.module.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Breadcrumb from '../../components/Breadcrumb';
 import { FaFilePdf, FaFileAlt, FaFileSignature, FaCalendarAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 export default function Meetings() {
@@ -74,6 +75,7 @@ export default function Meetings() {
       
       <main className={styles.main}>
         <div className={styles.container}>
+          <Breadcrumb />
           <h1 className={styles.pageTitle}>Board Meetings</h1>
           
           {loading ? (

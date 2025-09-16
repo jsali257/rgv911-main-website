@@ -3,6 +3,7 @@
 import React from 'react';
 import styles from './TeamPage.module.css';
 import Image from 'next/image';
+import Breadcrumb from './Breadcrumb';
 
 export default function TeamPage() {
   // Team data organized by department
@@ -42,6 +43,7 @@ export default function TeamPage() {
   return (
     <section className={styles.teamPage}>
       <div className={styles.container}>
+        <Breadcrumb />
         <div className={styles.header}>
           <h1 className={styles.title}>Meet Our Team</h1>
           <p className={styles.subtitle}>

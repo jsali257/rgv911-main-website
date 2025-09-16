@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Breadcrumb from '../../components/Breadcrumb';
 import { FaFacebook, FaTwitter, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 
 export default function BoardOfManagers() {
@@ -81,6 +82,7 @@ export default function BoardOfManagers() {
       
       <main className={styles.main}>
         <div className={styles.container}>
+          <Breadcrumb />
           <h1 className={styles.pageTitle}>Board of Managers</h1>
           
           <section className={styles.boardSection}>

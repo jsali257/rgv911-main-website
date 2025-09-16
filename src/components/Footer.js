@@ -12,10 +12,10 @@ export default function Footer() {
         <div className={styles.footerSection}>
           <div className={styles.footerLogo}>
             <Image
-              src="https://gis.rgv911.org/911-2-img.png"
+              src="/images/other/logo.png"
               alt="RGV911 Logo"
-              width={80}
-              height={80}
+              width={120}
+              height={120}
               priority
               quality={100}
               unoptimized

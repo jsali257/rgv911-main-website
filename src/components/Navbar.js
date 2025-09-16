@@ -52,10 +52,10 @@ export default function Navbar() {
             <div className={styles.navLogo}>
               <div className={styles.logoWrapper}>
                 <Image
-                  src="https://gis.rgv911.org/911-2-img.png"
+                  src="/images/other/logo.png"
                   alt="RGV911 Logo"
-                  width={40}
-                  height={40}
+                  width={60}
+                  height={60}
                   priority
                   quality={100}
                   className={styles.logoImage}
@@ -120,10 +120,10 @@ export default function Navbar() {
           <div className={styles.mobileNavLogo}>
             <div className={styles.logoWrapper}>
               <Image
-                src="https://gis.rgv911.org/911-2-img.png"
+                src="/images/other/logo.png"
                 alt="RGV911 Logo"
-                width={40}
-                height={40}
+                width={60}
+                height={60}
                 priority
                 quality={100}
                 className={styles.logoImage}
@@ -237,31 +237,31 @@ export default function Navbar() {
               {/* GIS Requests Section */}
               <div className={styles.dropdownSection}>
                 <div className={styles.dropdownSectionTitle}>GIS Requests</div>
-                <Link href="#" className={styles.dropdownItem}>
+                <Link href="/request-911-address" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
                   Request a 911 Address
                 </Link>
-                <Link href="#" className={styles.dropdownItem}>
+                <Link href="/subdivision-request" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
                   </svg>
                   Subdivision Request
                 </Link>
-                <Link href="#" className={styles.dropdownItem}>
+                <Link href="/utility-request" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
                   </svg>
                   Utility Request
                 </Link>
-                <Link href="#" className={styles.dropdownItem}>
+                <Link href="/street-name-request" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clipRule="evenodd" />
                   </svg>
                   Street Name Request
                 </Link>
-                <Link href="#" className={styles.dropdownItem}>
+                <Link href="/city-request" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
                   </svg>
@@ -315,6 +315,12 @@ export default function Navbar() {
                 </svg>
                 Maps
               </Link>
+              <Link href="/road-naming-guidelines" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+                </svg>
+                Road Naming Guidelines
+              </Link>
               <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -342,11 +348,13 @@ export default function Navbar() {
       <div className={`${styles.sidebar} ${isSidebarOpen ? styles.sidebarOpen : ''}`}>
         <div className={styles.sidebarLogo}>
           <Image
-            src="https://gis.rgv911.org/911-2-img.png"
+            src="/images/other/logo.png"
             alt="RGV911 Logo"
-            width={60}
-            height={60}
+            width={80}
+            height={80}
             priority
+            quality={100}
+            unoptimized
           />
           <div className={styles.logoText}>
             <span className={styles.logoTitle}>RGV</span>
@@ -439,19 +447,19 @@ export default function Navbar() {
               {/* GIS Requests */}
               <div className={styles.sidebarSubmenuSection}>
                 <div className={styles.sidebarSubmenuTitle}>GIS Requests</div>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                <Link href="/request-911-address" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Request a 911 Address
                 </Link>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                <Link href="/subdivision-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Subdivision Request
                 </Link>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                <Link href="/utility-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Utility Request
                 </Link>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                <Link href="/street-name-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Street Name Request
                 </Link>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                <Link href="/city-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Cities/Precinct Request
                 </Link>
               </div>
@@ -492,6 +500,9 @@ export default function Navbar() {
             <div className={styles.sidebarSubmenu}>
               <Link href="/resources/maps" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                 Maps
+              </Link>
+              <Link href="/road-naming-guidelines" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Road Naming Guidelines
               </Link>
               <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                 Data Downloads

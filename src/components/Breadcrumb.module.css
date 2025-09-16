@@ -1,0 +1,71 @@
+.breadcrumb {
+  margin-bottom: 20px;
+  padding: 8px 0;
+}
+
+.breadcrumbList {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.breadcrumbItem {
+  display: flex;
+  align-items: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.breadcrumbLink {
+  color: var(--rgv-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbLink:hover {
+  color: var(--rgv-blue-dark);
+  text-decoration: underline;
+}
+
+.currentPage {
+  color: #666;
+  font-weight: 500;
+}
+
+.separator {
+  margin: 0 8px;
+  color: #ccc;
+  font-size: 0.7rem;
+}
+
+.homeIcon {
+  font-size: 1rem;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+  .breadcrumb {
+    font-size: 0.8rem;
+  }
+  
+  .separator {
+    margin: 0 5px;
+  }
+}

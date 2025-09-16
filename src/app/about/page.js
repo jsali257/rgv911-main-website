@@ -4,6 +4,7 @@ import styles from "./page.module.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
+import Breadcrumb from "../../components/Breadcrumb";
 
 export default function About() {
   return (
@@ -22,6 +23,7 @@ export default function About() {
       <main className={styles.main}>
         <section className={styles.aboutSection}>
           <div className={styles.container}>
+            <Breadcrumb />
             <h2>Our History</h2>
             <p>
               The Rio Grande Valley 9-1-1 Emergency Communications District was established to provide

@@ -13,6 +13,10 @@ import ResourcesSection from "../components/ResourcesSection";
 import LanguageSelector from "../components/LanguageSelector";
 import AnimationProvider from "../components/AnimationProvider";
 import StatsIndicators from "../components/StatsIndicators";
+import ServiceCards from "../components/ServiceCards";
+import FAQPreview from "../components/FAQPreview";
+import MapPreview from "../components/MapPreview";
+import StatsSection from "../components/StatsSection";
 
 export default function Home() {
   return (
@@ -24,6 +28,9 @@ export default function Home() {
         <WhoWeAre />
         <Addressing />
         <PublicEducation />
+        <ServiceCards />
+        <MapPreview />
+        <FAQPreview />
         <Footer />
       </div>
     </AnimationProvider>

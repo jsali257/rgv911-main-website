@@ -2,13 +2,10 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaMapMarkedAlt, FaClipboardCheck, FaHome } from 'react-icons/fa';
+import { FaMapMarkedAlt, FaClipboardCheck, FaHome, FaSearchLocation, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa';
 import styles from './Addressing.module.css';
 
 export default function Addressing() {
-  const handleAddressRequest = () => {
-    window.open('https://survey123.arcgis.com/share/d383d62a6b5a4ee49738933e5e371bc8?portalUrl=https://gis.rgv911.org/portal', '_blank');
-  };
 
   return (
     <section className={styles.addressing}>
@@ -22,12 +19,9 @@ export default function Addressing() {
             emergency. If you need a 911 address, please click the button below to get started on your request and 
             help us keep our community safe and connected.
           </p>
-          <button 
-            onClick={handleAddressRequest}
-            className={styles.requestButton}
-          >
+          <Link href="/request-911-address" className={styles.requestButton}>
             <FaHome className={styles.buttonIcon} /> Request 911 Address
-          </button>
+          </Link>
         </div>
 
         <div className={styles.verificationSection}>
@@ -41,8 +35,14 @@ export default function Addressing() {
               Simply enter your address in the search bar to see if it matches the official 911 database.
             </p>
             <ul className={styles.bulletList}>
-              <li>If your address is correct, no further action is needed.</li>
-              <li>If your address is missing or incorrect, please submit a request to receive or update your 911 address.</li>
+              <li>
+                <span className={styles.bulletIcon}><FaCheckCircle /></span>
+                If your address is correct, no further action is needed.
+              </li>
+              <li>
+                <span className={styles.bulletIcon}><FaExclamationTriangle /></span>
+                If your address is missing or incorrect, please submit a request to receive or update your 911 address.
+              </li>
             </ul>
             <div className={styles.verificationTool}>
               <div className={styles.buttonGroup}>
@@ -52,12 +52,9 @@ export default function Addressing() {
                 >
                   <FaMapMarkedAlt className={styles.buttonIcon} /> Open Address Verification Map
                 </button>
-                <button 
-                  onClick={handleAddressRequest}
-                  className={styles.requestButton}
-                >
+                <Link href="/request-911-address" className={styles.requestButton}>
                   <FaClipboardCheck className={styles.buttonIcon} /> Submit Address Request
-                </button>
+                </Link>
               </div>
             </div>
           </div>

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
+import Breadcrumb from '../../../components/Breadcrumb';
 import EventCarousel from './EventCarousel';
 import { FaQuoteLeft, FaQuoteRight, FaGraduationCap, FaUsers, FaHandsHelping, FaCalendarAlt, FaChevronRight, FaExternalLinkAlt, FaClipboardList } from 'react-icons/fa';
 
@@ -70,6 +71,7 @@ export default function PublicEducationDepartment() {
       
       <main className={styles.main}>
         <div className={styles.container}>
+          <Breadcrumb />
           <h1 className={styles.pageTitle}>Public Education Department</h1>
           
           <section className={styles.directorSection}>

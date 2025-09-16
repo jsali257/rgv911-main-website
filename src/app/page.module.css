@@ -76,6 +76,15 @@
   padding: 0 20px;
 }
 
+/* Standardized container for all sections */
+.standardContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
 .quickHelpWrapper {
   background-color: #f5f7ff;
   width: 100vw;
@@ -121,6 +130,10 @@
   .sidebar {
     width: 100%;
     margin-top: 20px;
+  }
+  
+  .fullWidthContainer {
+    padding: 0 15px;
   }
 }
 
@@ -286,6 +299,20 @@
   .main h3 {
     font-size: 18px;
   }
+  
+  .container,
+  .fullWidthContainer {
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  .page {
+    overflow-x: hidden;
+  }
+  
+  .quickHelpWrapper {
+    padding: 40px 0;
+  }
 }
 
 @media (max-width: 480px) {
@@ -295,5 +322,19 @@
   
   .main h3 {
     font-size: 16px;
+  }
+  
+  .container,
+  .fullWidthContainer {
+    padding: 0 10px;
+  }
+  
+  .quickHelpWrapper {
+    padding: 30px 0;
+  }
+  
+  /* Improve spacing between sections */
+  .page > div {
+    margin-bottom: 20px;
   }
 }

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import styles from './page.module.css';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
+import Breadcrumb from '../../components/Breadcrumb';
 import { FaQuoteLeft, FaQuoteRight } from 'react-icons/fa';
 
 export default function ExecutiveDirector() {
@@ -13,6 +14,7 @@ export default function ExecutiveDirector() {
       
       <main className={styles.main}>
         <div className={styles.container}>
+          <Breadcrumb />
           <h1 className={styles.pageTitle}>Executive Director</h1>
           
           <section className={styles.directorSection}>

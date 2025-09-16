@@ -20,7 +20,8 @@
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1400px;
+  width: 85%;
   margin: 0 auto;
   padding: 20px 0 0 0;
   position: relative;
@@ -42,7 +43,7 @@
 
 .addressingContent {
   width: 65%;
-  padding-right: 20px;
+  padding-right: 40px;
 }
 
 .textContent {
@@ -75,26 +76,7 @@
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
-.titleWithIcon {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  position: relative;
-}
-
-.iconWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.titleIcon {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
-}
+/* Title styles */
 
 .title {
   font-size: 2.2rem;
@@ -188,18 +170,23 @@
   line-height: 1.6;
   color: var(--rgv-gray-dark);
   position: relative;
-  padding-left: 24px;
+  padding-left: 30px;
 }
 
-.bulletList li::before {
-  content: '';
+.bulletIcon {
   position: absolute;
   left: 0;
-  top: 8px;
-  width: 8px;
-  height: 8px;
-  background-color: var(--rgv-gold);
-  border-radius: 50%;
+  top: 2px;
+  color: var(--rgv-gold);
+  font-size: 1.1rem;
+}
+
+.bulletList li:first-child .bulletIcon {
+  color: #28a745;
+}
+
+.bulletList li:last-child .bulletIcon {
+  color: #ffc107;
 }
 
 .verificationTool {
@@ -228,6 +215,29 @@
 .mapButton:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-lg);
+}
+
+/* Large screen styles */
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1600px;
+    width: 80%;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+  
+  .addressingContent {
+    width: 70%;
+    padding-right: 60px;
+  }
+  
+  .imageContainer {
+    width: 30%;
+    max-width: 350px;
+  }
 }
 
 /* Responsive styles */

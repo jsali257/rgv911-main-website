@@ -1,6 +1,5 @@
 .statsContainer {
   width: 100%;
-  background: linear-gradient(to bottom, var(--rgv-gray-light), #ffffff);
   padding: 40px 0;
   color: var(--rgv-gray-dark);
   position: relative;

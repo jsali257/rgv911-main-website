@@ -3,7 +3,8 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import styles from './WhoWeAre.module.css';
-import StatsIndicators from './StatsIndicators';
+import { FaMapMarkedAlt, FaServer, FaUserFriends } from 'react-icons/fa';
+import StatsSection from './StatsSection';
 
 export default function WhoWeAre() {
   // State to track which department is active for mobile view
@@ -23,15 +24,18 @@ export default function WhoWeAre() {
             Our agency comprises three key departments, each with specialized roles:
           </p>
           
-          <div className={styles.statsSection}>
-            <StatsIndicators />
-          </div>
+
         </div>
 
         <div className={styles.departments}>
           {/* GIS Department */}
           <div className={styles.department}>
-            <h3 className={styles.departmentTitle}>GIS Department</h3>
+            <div className={styles.departmentHeader}>
+              <div className={styles.departmentIconWrapper}>
+                <FaMapMarkedAlt className={styles.departmentIcon} />
+              </div>
+              <h3 className={styles.departmentTitle}>GIS Department</h3>
+            </div>
             <p className={styles.departmentDescription}>
               RGV911&apos;s Addressing Department maintains and updates the addressing systems that emergency responders 
               rely on to locate residents and businesses quickly and accurately. Our team collaborates closely with 
@@ -42,7 +46,12 @@ export default function WhoWeAre() {
 
           {/* IT Department */}
           <div className={styles.department}>
-            <h3 className={styles.departmentTitle}>Information Technology Department</h3>
+            <div className={styles.departmentHeader}>
+              <div className={styles.departmentIconWrapper}>
+                <FaServer className={styles.departmentIcon} />
+              </div>
+              <h3 className={styles.departmentTitle}>Information Technology Department</h3>
+            </div>
             <p className={styles.departmentDescription}>
               The IT team plays a crucial role in maintaining the Public Safety Answering Points (PSAPs), 
               where emergency calls are processed. This department manages the technical infrastructure, 
@@ -53,7 +62,12 @@ export default function WhoWeAre() {
 
           {/* Public Education Department */}
           <div className={styles.department}>
-            <h3 className={styles.departmentTitle}>Public Education Department</h3>
+            <div className={styles.departmentHeader}>
+              <div className={styles.departmentIconWrapper}>
+                <FaUserFriends className={styles.departmentIcon} />
+              </div>
+              <h3 className={styles.departmentTitle}>Public Education Department</h3>
+            </div>
             <p className={styles.departmentDescription}>
               Dedicated to community safety and awareness, our Public Education team provides resources 
               and presentations to educate the public on calling and texting 911. Through outreach events 
@@ -69,6 +83,12 @@ export default function WhoWeAre() {
             informed, and well-prepared.
           </p>
         </div>
+        
+        {/* Our Impact Section */}
+        <div className={styles.impactSection}>
+          <StatsSection />
+        </div>
+        
       </div>
     </section>
   );

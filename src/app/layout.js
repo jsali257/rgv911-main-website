@@ -1,5 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -20,7 +21,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="https://website-widgets.pages.dev/dist/sienna.min.js" defer></script>
         <style dangerouslySetInnerHTML={{ __html: `
           @media (max-width: 482px) {
             html, body {
@@ -49,6 +49,10 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`} style={{ margin: 0, padding: 0 }}>
         {children}
+        <Script
+          src="https://website-widgets.pages.dev/dist/sienna.min.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import styles from './page.module.css';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
+import Breadcrumb from '../../../components/Breadcrumb';
 import { FaMapMarkedAlt, FaExternalLinkAlt, FaSearch, FaLayerGroup } from 'react-icons/fa';
 
 export default function MapsPage() {
@@ -80,6 +81,7 @@ export default function MapsPage() {
       
       <main className={styles.main}>
         <div className={styles.container}>
+          <Breadcrumb />
           <div className={styles.heroSection}>
             <div className={styles.heroContent}>
               <h1 className={styles.pageTitle}>
