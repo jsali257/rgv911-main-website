@@ -83,8 +83,6 @@ export default function Navbar() {
                 <div className={styles.topNavDropdownMenu}>
                   <Link href="/how-do-i/report-emergency" className={styles.topNavDropdownItem}>Report an Emergency</Link>
                   <Link href="/how-do-i/request-address" className={styles.topNavDropdownItem}>Request a 911 Address</Link>
-                  <Link href="/how-do-i/file-complaint" className={styles.topNavDropdownItem}>File a Complaint</Link>
-                  <Link href="/how-do-i/volunteer" className={styles.topNavDropdownItem}>Volunteer</Link>
                   <Link href="/how-do-i/training" className={styles.topNavDropdownItem}>Get Training</Link>
                 </div>
               </div>
