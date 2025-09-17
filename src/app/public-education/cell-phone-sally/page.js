@@ -252,7 +252,7 @@ export default function CellPhoneSally() {
         </div>
       )}
       
-      <div className={styles.kidFriendlyHeader}>
+      {/* <div className={styles.kidFriendlyHeader}>
         <div className={styles.container}>
           <div className={styles.headerContent}>
             <div className={styles.headerText}>
@@ -270,7 +270,7 @@ export default function CellPhoneSally() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       
       <main className={styles.main}>
         <section className={styles.sallySection}>

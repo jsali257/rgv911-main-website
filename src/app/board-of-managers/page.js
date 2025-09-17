@@ -14,7 +14,7 @@ export default function BoardOfManagers() {
       title: "President",
       name: "Mayor Gilbert Gonzales",
       organization: "City of Raymondville",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/Gonzales.jpg"
     },
     {
       title: "Vice President",
@@ -26,13 +26,13 @@ export default function BoardOfManagers() {
       title: "Secretary",
       name: "Judge Aurelio 'Keeter' Guerra",
       organization: "Willacy County",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/JudgeAurelioGuerra.jpg"
     },
     {
       title: "Treasurer",
       name: "Mayor Ramiro Garza Jr.",
       organization: "City of Edinburg",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/RGarza.png"
     }
   ];
 
@@ -42,37 +42,37 @@ export default function BoardOfManagers() {
       title: "Board Member",
       name: "Mayor Pro Tem Arturo Galvan Jr",
       organization: "City of Alton",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/AGalvan.png"
     },
     {
       title: "Board Member",
       name: "Sheriff J.E 'Eddie' Guerra",
       organization: "Hidalgo County Sheriff",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/Guerra.png"
     },
     {
       title: "Board Member",
       name: "Mayor Alonzo 'AL' Perez Jr",
       organization: "City of Elsa",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/AlonzoPerez.png"
     },
     {
       title: "Board Member",
       name: "Mayor Yvette Cabrera",
       organization: "City of Granjeno",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/YCABRERA.jpg"
     },
     {
       title: "Board Member",
       name: "Mayor Oscar D. Montoya",
       organization: "City of Mercedes",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/OMontoya.jpg"
     },
     {
       title: "Board Member",
       name: "Mayor Adrian Gonzales",
       organization: "City of Weslaco",
-      image: "/images/boardOfManagers/JZamora.jpg"
+      image: "/images/boardOfManagers/MayorAdrianGonzalez.jpg"
     }
   ];
 
