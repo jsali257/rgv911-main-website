@@ -1,0 +1,135 @@
+.serviceCard {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+  --card-color: var(--rgv-blue);
+}
+
+.serviceCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: var(--card-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.serviceCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.serviceCard:hover::before {
+  transform: scaleX(1);
+}
+
+.cardIcon {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(var(--card-color-rgb, 67, 102, 238), 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: var(--card-color);
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.serviceCard:hover .cardIcon {
+  transform: scale(1.1) rotate(5deg);
+  background-color: rgba(var(--card-color-rgb, 67, 102, 238), 0.15);
+}
+
+.cardTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--rgv-blue-dark);
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.serviceCard:hover .cardTitle {
+  color: var(--card-color);
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: var(--rgv-gray);
+  line-height: 1.6;
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.cardAction {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+}
+
+.learnMore {
+  color: var(--card-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.learnMore::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--card-color);
+  transition: width 0.3s ease;
+}
+
+.serviceCard:hover .learnMore::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .serviceCard {
+    padding: 25px;
+  }
+  
+  .cardIcon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+  }
+  
+  .cardTitle {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceCard {
+    padding: 20px;
+  }
+  
+  .cardTitle {
+    font-size: 1.2rem;
+  }
+  
+  .cardDescription {
+    font-size: 0.95rem;
+  }
+}

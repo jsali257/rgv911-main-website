@@ -6,7 +6,7 @@
 
 .main {
   flex: 1;
-  padding: 80px 0;
+  padding: 0 0 0 0; /* Removed top padding since we have the hero section */
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
@@ -92,7 +92,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
   position: relative;
   z-index: 1;
 }
@@ -284,7 +284,11 @@
 
 @media (max-width: 480px) {
   .main {
-    padding: 40px 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 30px 15px;
   }
   
   .pageTitle {
@@ -318,5 +322,127 @@
   
   .quoteIcon {
     font-size: 1.2rem;
+  }
+}
+
+/* New section styles */
+.directorSection {
+  margin-bottom: 60px;
+}
+
+.messageContent {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.messageContent p {
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+}
+
+.quoteContainer {
+  margin: 40px 0;
+  padding: 30px 40px;
+  background-color: rgba(26, 47, 105, 0.05);
+  border-radius: 8px;
+  position: relative;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rgv-blue-dark);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.quoteIcon {
+  color: var(--rgv-gold);
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.quoteIcon:first-of-type {
+  top: 20px;
+  left: 20px;
+}
+
+.quoteIcon:last-of-type {
+  bottom: 20px;
+  right: 20px;
+}
+
+.signature {
+  margin-top: 40px;
+  text-align: right;
+  font-style: italic;
+}
+
+.signature p:first-child {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.signature p:last-child {
+  color: #555;
+}
+
+.statsSection,
+.milestonesSection,
+.visionSection,
+.faqSection {
+  margin: 80px 0;
+  position: relative;
+}
+
+.visionContent {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.strategyList {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.strategyList li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 15px;
+  font-size: 1.05rem;
+  color: var(--rgv-gray-dark);
+}
+
+.strategyList li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4cc9f0;
+}
+
+@media (max-width: 768px) {
+  .statsSection,
+  .milestonesSection,
+  .visionSection,
+  .faqSection {
+    margin: 60px 0;
+  }
+  
+  .visionContent {
+    padding: 20px;
+  }
+  
+  .strategyList li {
+    font-size: 1rem;
   }
 }

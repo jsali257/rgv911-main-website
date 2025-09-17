@@ -1,0 +1,214 @@
+.directorProfile {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.directorImageWrapper {
+  flex-shrink: 0;
+  width: 300px;
+  height: 375px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.directorImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.directorImageWrapper:hover .directorImage {
+  transform: scale(1.05);
+}
+
+.directorImageWrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.directorImageWrapper:hover::after {
+  opacity: 1;
+}
+
+.directorInfo {
+  flex: 1;
+}
+
+.directorName {
+  font-size: 2.2rem;
+  color: var(--rgv-blue-dark);
+  margin-bottom: 5px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.directorName::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: var(--rgv-gold);
+  border-radius: 1.5px;
+}
+
+.directorTitle {
+  font-size: 1.4rem;
+  color: var(--rgv-blue);
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.directorCredentials {
+  font-size: 1.1rem;
+  color: var(--rgv-gray);
+  margin-bottom: 20px;
+}
+
+.directorBio {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--rgv-gray-dark);
+  margin-bottom: 25px;
+}
+
+.directorContact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contactLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--rgv-blue);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: rgba(67, 102, 238, 0.05);
+}
+
+.contactLink:hover {
+  color: var(--rgv-blue-dark);
+  background-color: rgba(67, 102, 238, 0.1);
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 992px) {
+  .directorProfile {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .directorName::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .directorContact {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .directorImageWrapper {
+    width: 250px;
+    height: 312px;
+  }
+  
+  .directorName {
+    font-size: 1.8rem;
+  }
+  
+  .directorTitle {
+    font-size: 1.2rem;
+  }
+  
+  .directorBio {
+    font-size: 1rem;
+  }
+  
+  .quote {
+    font-size: 1rem;
+  }
+  
+  .quoteIconLeft,
+  .quoteIconRight {
+    font-size: 1.2rem;
+  }
+}
+
+/* Quote styles */
+.quoteContainer {
+  margin: 30px 0 10px;
+  padding: 25px 30px;
+  background-color: rgba(26, 47, 105, 0.05);
+  border-radius: 8px;
+  position: relative;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rgv-blue-dark);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+  position: relative;
+  z-index: 1;
+}
+
+.quoteIconLeft,
+.quoteIconRight {
+  color: var(--rgv-gold);
+  font-size: 1.5rem;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.quoteIconLeft {
+  top: 15px;
+  left: 15px;
+}
+
+.quoteIconRight {
+  bottom: 15px;
+  right: 15px;
+}
+
+.quoteAuthorContainer {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.quoteAuthor {
+  font-style: italic;
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}

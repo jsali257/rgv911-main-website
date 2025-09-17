@@ -6,7 +6,7 @@
 
 .main {
   flex: 1;
-  padding: 80px 0;
+  padding: 0 0 0 0; /* Removed top padding since we have the hero section */
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
@@ -93,7 +93,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
   position: relative;
   z-index: 1;
 }
@@ -323,7 +323,11 @@
 
 @media (max-width: 480px) {
   .main {
-    padding: 40px 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 30px 15px;
   }
   
   .pageTitle {
@@ -365,5 +369,110 @@
   
   .subSectionTitle {
     font-size: 1.1rem;
+  }
+}
+
+/* New section styles */
+.introSection {
+  margin-bottom: 60px;
+}
+
+.introParagraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--rgv-gray-dark);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.directorSection,
+.statsSection,
+.servicesSection,
+.tabSection,
+.teamSection {
+  margin: 80px 0;
+  position: relative;
+}
+
+.tabContent {
+  padding: 20px 0;
+}
+
+.infrastructureList,
+.innovationsList {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.infrastructureList li,
+.innovationsList li {
+  margin-bottom: 15px;
+  position: relative;
+  padding-left: 5px;
+  font-size: 1.05rem;
+  color: var(--rgv-gray-dark);
+}
+
+.quoteContainer {
+  margin: 40px 0;
+  padding: 30px 40px;
+  background-color: rgba(26, 47, 105, 0.05);
+  border-radius: 8px;
+  position: relative;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rgv-blue-dark);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.quoteIcon {
+  color: var(--rgv-gold);
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.quoteIcon:first-of-type {
+  top: 20px;
+  left: 20px;
+}
+
+.quoteIcon:last-of-type {
+  bottom: 20px;
+  right: 20px;
+}
+
+.quoteAuthorContainer {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.quoteAuthor {
+  font-style: italic;
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .directorSection,
+  .statsSection,
+  .servicesSection,
+  .tabSection,
+  .teamSection {
+    margin: 60px 0;
+  }
+  
+  .introParagraph {
+    font-size: 1rem;
+  }
+  
+  .infrastructureList li,
+  .innovationsList li {
+    font-size: 1rem;
   }
 }

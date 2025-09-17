@@ -6,7 +6,7 @@
 
 .main {
   flex: 1;
-  padding: 80px 0;
+  padding: 0 0 0 0; /* Removed top padding since we have the hero section */
   background: linear-gradient(135deg, #ffffff 0%, #f0f2f5 100%);
   position: relative;
   overflow: hidden;
@@ -93,7 +93,7 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 20px;
   position: relative;
   z-index: 1;
 }
@@ -565,7 +565,11 @@
 
 @media (max-width: 480px) {
   .main {
-    padding: 40px 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 30px 15px;
   }
   
   .pageTitle {
@@ -649,5 +653,81 @@
   .requestButton {
     padding: 12px 25px;
     font-size: 0.9rem;
+  }
+}
+
+/* New section styles */
+.introSection {
+  margin-bottom: 60px;
+}
+
+.introParagraph {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--rgv-gray-dark);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.directorSection,
+.missionSection,
+.statsSection,
+.servicesSection,
+.teamSection {
+  margin: 80px 0;
+  position: relative;
+}
+
+.missionContent {
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.quoteContainer {
+  margin: 40px 0;
+  padding: 30px 40px;
+  background-color: rgba(26, 47, 105, 0.05);
+  border-radius: 8px;
+  position: relative;
+}
+
+.quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--rgv-blue-dark);
+  text-align: center;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.quoteIcon {
+  color: var(--rgv-gold);
+  font-size: 1.5rem;
+  position: absolute;
+}
+
+.quoteIcon:first-of-type {
+  top: 20px;
+  left: 20px;
+}
+
+.quoteIcon:last-of-type {
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 768px) {
+  .directorSection,
+  .missionSection,
+  .statsSection,
+  .servicesSection,
+  .teamSection {
+    margin: 60px 0;
+  }
+  
+  .introParagraph {
+    font-size: 1rem;
   }
 }

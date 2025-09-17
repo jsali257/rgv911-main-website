@@ -1,0 +1,106 @@
+.tabContainer {
+  margin: 40px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  background-color: white;
+}
+
+.tabHeaders {
+  display: flex;
+  background-color: var(--rgv-gray-light);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tabButton {
+  padding: 15px 25px;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--rgv-gray-dark);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  justify-content: center;
+}
+
+.tabButton::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--rgv-blue);
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.tabButton:hover {
+  color: var(--rgv-blue);
+  background-color: rgba(67, 102, 238, 0.05);
+}
+
+.activeTab {
+  color: var(--rgv-blue);
+  background-color: white;
+}
+
+.activeTab::after {
+  transform: scaleX(1);
+}
+
+.tabIcon {
+  font-size: 1.2rem;
+}
+
+.tabContent {
+  padding: 30px;
+}
+
+.tabPanel {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .tabHeaders {
+    flex-wrap: wrap;
+  }
+  
+  .tabButton {
+    padding: 12px 15px;
+    font-size: 1rem;
+  }
+  
+  .tabContent {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabButton {
+    padding: 10px;
+    font-size: 0.9rem;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .tabIcon {
+    font-size: 1.1rem;
+  }
+  
+  .tabContent {
+    padding: 15px;
+  }
+}

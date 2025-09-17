@@ -1,13 +1,35 @@
 "use client";
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import styles from './page.module.css';
 import Navbar from '../../../components/Navbar';
 import Footer from '../../../components/Footer';
 import Breadcrumb from '../../../components/Breadcrumb';
+import DepartmentHero from '../../../components/DepartmentHero';
+import DirectorProfile from '../../../components/DirectorProfile';
+import SectionTitle from '../../../components/SectionTitle';
+import StatisticsRow from '../../../components/StatisticsRow';
+import ServiceGrid from '../../../components/ServiceGrid';
+import TeamGrid from '../../../components/TeamGrid';
+import ContactSection from '../../../components/ContactSection';
 import EventCarousel from './EventCarousel';
-import { FaQuoteLeft, FaQuoteRight, FaGraduationCap, FaUsers, FaHandsHelping, FaCalendarAlt, FaChevronRight, FaExternalLinkAlt, FaClipboardList } from 'react-icons/fa';
+import { 
+  FaQuoteLeft, 
+  FaQuoteRight, 
+  FaGraduationCap, 
+  FaUsers, 
+  FaHandsHelping, 
+  FaCalendarAlt, 
+  FaChevronRight, 
+  FaExternalLinkAlt, 
+  FaClipboardList,
+  FaChild,
+  FaSchool,
+  FaBullhorn,
+  FaChartLine
+} from 'react-icons/fa';
 
 export default function PublicEducationDepartment() {
   const [events, setEvents] = useState([]);
@@ -65,93 +87,170 @@ export default function PublicEducationDepartment() {
     }
   };
 
+  // Statistics
+  const stats = [
+    {
+      value: '50+',
+      label: 'Schools Visited',
+      description: 'Annual outreach'
+    },
+    {
+      value: '10,000+',
+      label: 'Students Educated',
+      description: 'About proper 9-1-1 use',
+      color: '#4cc9f0'
+    },
+    {
+      value: '100+',
+      label: 'Community Events',
+      description: 'Annual participation',
+      color: '#f72585'
+    }
+  ];
+  
+  // Services
+  const services = [
+    {
+      title: "School Programs",
+      description: "We visit schools to teach children about the proper use of 9-1-1 and emergency preparedness through age-appropriate presentations.",
+      icon: <FaSchool />,
+      color: '#4361ee'
+    },
+    {
+      title: "Community Outreach",
+      description: "We participate in community events to raise awareness about emergency services and provide educational materials to residents.",
+      icon: <FaUsers />,
+      color: '#4cc9f0'
+    },
+    {
+      title: "Safety Campaigns",
+      description: "We develop and implement safety awareness campaigns to address specific emergency communication needs in our community.",
+      icon: <FaBullhorn />,
+      color: '#f72585'
+    }
+  ];
+  
+  // Team members from TeamPage.js
+  const teamMembers = [
+    {
+      name: "Maribel Alonzo",
+      title: "Public Education Coordinator",
+      imageSrc: "/images/directors/maribel.jpg",
+      email: "events@rgv911.org"
+    },
+    {
+      name: "Jaquelin Duenez",
+      title: "Program Specialist",
+      imageSrc: "/images/team/Joe.jpg", // Using existing image as placeholder
+      email: "events@rgv911.org"
+    },
+    {
+      name: "Lizbeth Salazar",
+      title: "Media Designer",
+      imageSrc: "/images/team/Joe.jpg", // Using existing image as placeholder
+      email: "events@rgv911.org"
+    }
+  ];
+
   return (
     <div className={styles.page}>
       <Navbar />
       
+      <DepartmentHero 
+        title="Public Education Department" 
+        backgroundImage="/images/backgrounds/public-education-banner.jpg"
+        subtitle="Educating our community about emergency services and safety"
+      />
+      
       <main className={styles.main}>
         <div className={styles.container}>
           <Breadcrumb />
-          <h1 className={styles.pageTitle}>Public Education Department</h1>
+          
+          {/* Intro content moved to director profile */}
           
           <section className={styles.directorSection}>
-            <div className={styles.directorProfile}>
-              <div className={styles.directorImageContainer}>
-                <Image 
-                  src="/images/directors/maribel.jpg"
-                  alt="Maribel Alonzo - Public Education Coordinator"
-                  width={400}
-                  height={500}
-                  className={styles.directorImage}
-                  priority
-                  quality={100}
-                />
-              </div>
-              
-              <div className={styles.directorInfo}>
-                <h2 className={styles.directorName}>Maribel Alonzo</h2>
-                <h3 className={styles.directorTitle}>Public Education Coordinator</h3>
-              </div>
-            </div>
+            <SectionTitle 
+              title="Department Leadership" 
+              icon={<FaUsers />}
+            />
             
-            <div className={styles.messageContent}>
-              <div className={styles.quoteContainer}>
-                <div className={styles.quoteIconLeft}>
-                  <FaQuoteLeft className={styles.quoteIcon} />
-                </div>
-                <blockquote className={styles.quote}>
-                  The greatest thing about public education is that it involves a wonderfully diverse public
-                </blockquote>
-                <div className={styles.quoteIconRight}>
-                  <FaQuoteRight className={styles.quoteIcon} />
-                </div>
+            <DirectorProfile
+              name="Maribel Alonzo"
+              title="Public Education Coordinator"
+              imageSrc="/images/directors/maribel.jpg"
+              email="events@rgv911.org"
+              bio="Leading the Public Education Department with a passion for community engagement and emergency services education throughout the Rio Grande Valley. The greatest thing about public education is that it involves a wonderfully diverse public! We believe in the significance of community engagement, speaking to the communities, public safety awareness, and the goal of ensuring important information reaches our communities that could potentially save lives."
+              quote="The greatest thing about public education is that it involves a wonderfully diverse public"
+            />
+          </section>
+          
+          <section className={styles.missionSection}>
+            <SectionTitle 
+              title="Our Mission" 
+              icon={<FaHandsHelping />}
+            />
+            
+            <div className={styles.missionContent}>
+              <div className={styles.contentSection}>
+                <h3 className={styles.subSectionTitle}>
+                  <FaGraduationCap className={styles.subSectionIcon} /> 
+                  50 Years of 9-1-1 Education
+                </h3>
+                <p>
+                  For fifty years, 9-1-1 has become the critical link between the American public and emergency services. Public education and initiatives to create awareness throughout the years have contributed to the incredible and ongoing success of the emergency communications system as a whole.
+                </p>
               </div>
               
-              <div className={styles.departmentInfo}>
+              <div className={styles.contentSection}>
+                <h3 className={styles.subSectionTitle}>
+                  <FaUsers className={styles.subSectionIcon} /> 
+                  Community Engagement
+                </h3>
                 <p>
-                  The greatest thing about public education is that it involves a wonderfully diverse public! We believe in the significance of community engagement, speaking to the communities, public safety awareness, and the goal of ensuring important information reaches our communities that could potentially save lives…
+                  It is imperative that 9-1-1 professionals, teachers, government officials, media representatives, and industry leaders are equipped with the information and tools necessary to continue these efforts in the face of an ever-changing telecommunications landscape, and that citizens of all ages are well versed in the role they play ensuring effective and efficient emergency response for themselves and their fellow citizens.
                 </p>
-                
-                <div className={styles.departmentContent}>
-                  <div className={styles.contentSection}>
-                    <h3 className={styles.subSectionTitle}>
-                      <FaGraduationCap className={styles.subSectionIcon} /> 
-                      50 Years of 9-1-1 Education
-                    </h3>
-                    <p>
-                      For fifty years, 9-1-1 has become the critical link between the American public and emergency services. Public education and initiatives to create awareness throughout the years have contributed to the incredible and ongoing success of the emergency communications system as a whole.
-                    </p>
-                  </div>
-                  
-                  <div className={styles.contentSection}>
-                    <h3 className={styles.subSectionTitle}>
-                      <FaUsers className={styles.subSectionIcon} /> 
-                      Community Engagement
-                    </h3>
-                    <p>
-                      It is imperative that 9-1-1 professionals, teachers, government officials, media representatives, and industry leaders are equipped with the information and tools necessary to continue these efforts in the face of an ever-changing telecommunications landscape, and that citizens of all ages are well versed in the role they play ensuring effective and efficient emergency response for themselves and their fellow citizens.
-                    </p>
-                  </div>
-                  
-                  <div className={styles.contentSection}>
-                    <h3 className={styles.subSectionTitle}>
-                      <FaHandsHelping className={styles.subSectionIcon} /> 
-                      Our Mission
-                    </h3>
-                    <p>
-                      Our mission is to educate the public about the proper use of 9-1-1 services, promote safety awareness, and ensure that vital information reaches all members of our community. Through outreach programs, educational materials, and community partnerships, we strive to make emergency services more accessible and effective for everyone.
-                    </p>
-                  </div>
-                </div>
+              </div>
+              
+              <div className={styles.contentSection}>
+                <h3 className={styles.subSectionTitle}>
+                  <FaChild className={styles.subSectionIcon} /> 
+                  Education for All Ages
+                </h3>
+                <p>
+                  Our mission is to educate the public about the proper use of 9-1-1 services, promote safety awareness, and ensure that vital information reaches all members of our community. Through outreach programs, educational materials, and community partnerships, we strive to make emergency services more accessible and effective for everyone.
+                </p>
               </div>
             </div>
           </section>
-
+          
+          <section className={styles.statsSection}>
+            <SectionTitle 
+              title="Our Impact" 
+              subtitle="Reaching our community through education and outreach"
+              icon={<FaChartLine />}
+              align="center"
+            />
+            
+            <StatisticsRow stats={stats} />
+          </section>
+          
+          <section className={styles.servicesSection}>
+            <SectionTitle 
+              title="Our Programs" 
+              subtitle="The Public Education Department offers various educational programs"
+              icon={<FaGraduationCap />}
+              align="center"
+              underlineColor="#4cc9f0"
+            />
+            
+            <ServiceGrid services={services} />
+          </section>
+          
           <section className={styles.eventsSection}>
-            <h2 className={styles.sectionTitleBox}>
-              <FaCalendarAlt className={styles.sectionIcon} />
-              Recent Events
-            </h2>
+            <SectionTitle 
+              title="Recent Events" 
+              icon={<FaCalendarAlt />}
+            />
 
             {loading ? (
               <div className={styles.loadingContainer}>
@@ -193,12 +292,13 @@ export default function PublicEducationDepartment() {
               </div>
             )}
           </section>
-
+          
           <section className={styles.requestSection}>
-            <h2 className={styles.sectionTitleBox}>
-              <FaClipboardList className={styles.sectionIcon} />
-              Request an Event
-            </h2>
+            <SectionTitle 
+              title="Request an Event" 
+              icon={<FaClipboardList />}
+            />
+            
             <div className={styles.requestContainer}>
               <div className={styles.requestContent}>
                 <h3 className={styles.requestHeading}>Request Our Team at Your Event</h3>
@@ -228,8 +328,29 @@ export default function PublicEducationDepartment() {
               </div>
             </div>
           </section>
+          
+          <section className={styles.teamSection}>
+            <SectionTitle 
+              title="Meet Our Team" 
+              subtitle="The professionals behind our public education initiatives"
+              icon={<FaUsers />}
+              align="center"
+            />
+            
+            <TeamGrid members={teamMembers} />
+          </section>
         </div>
       </main>
+      
+      <ContactSection 
+        title="Contact the Public Education Department"
+        phone="(956) 682-3481"
+        email="events@rgv911.org"
+        address="510 S Pleasantview Dr, Weslaco, TX 78596"
+        hours="Monday - Friday: 8:00 AM - 5:00 PM"
+        ctaText="Want to learn more about our educational programs?"
+        ctaButtonText="Get in Touch"
+      />
       
       <Footer />
     </div>

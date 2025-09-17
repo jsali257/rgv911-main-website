@@ -1,0 +1,98 @@
+.teamMember {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.teamMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+.memberImageWrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.memberImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.teamMember:hover .memberImage {
+  transform: scale(1.05);
+}
+
+.memberInfo {
+  padding: 20px;
+}
+
+.memberName {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--rgv-blue-dark);
+  margin-bottom: 5px;
+}
+
+.memberTitle {
+  font-size: 1rem;
+  color: var(--rgv-gold);
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.memberDescription {
+  font-size: 0.95rem;
+  color: var(--rgv-gray);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.memberContact {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.contactDetail {
+  font-size: 0.9rem;
+  color: var(--rgv-blue);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.contactDetail:hover {
+  color: var(--rgv-blue-dark);
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .memberImageWrapper {
+    height: 250px;
+  }
+  
+  .memberName {
+    font-size: 1.2rem;
+  }
+  
+  .memberTitle {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .memberImageWrapper {
+    height: 200px;
+  }
+}
