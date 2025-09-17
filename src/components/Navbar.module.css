@@ -314,6 +314,10 @@
   display: block; /* Ensure visibility */
 }
 
+.goldText {
+  color: var(--rgv-gold);
+  font-weight: 800;
+}
 
 .navLinks {
   display: flex;

@@ -63,7 +63,7 @@ export default function Navbar() {
                 />
                 <div className={styles.logoText}>
                   <div className={styles.logoTitleWrapper}>
-                    <span className={styles.logoTitle}>RGV 9-1-1</span>
+                    <span className={styles.logoTitle}>RGV <span className={styles.goldText}>9-1-1</span></span>
                   </div>
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Navbar() {
               />
               <div className={styles.logoText}>
                 <div className={styles.logoTitleWrapper}>
-                  <span className={styles.logoTitle}>RGV 9-1-1</span>
+                  <span className={styles.logoTitle}>RGV <span className={styles.goldText}>9-1-1</span></span>
                 </div>
               </div>
             </div>
@@ -322,17 +322,16 @@ export default function Navbar() {
           <Image
             src="/images/other/logo.png"
             alt="RGV911 Logo"
-            width={60}
-            height={60}
+            width={40}
+            height={40}
             priority
             quality={100}
+            className={styles.logoImage}
             unoptimized
           />
-          <div className={styles.logoText}>
-            <span className={styles.sidebarLogoTitle}>
-              RGV<span className={styles.sidebarLogoNumber}>9-1-1</span>
-            </span>
-          </div>
+          <span className={styles.sidebarLogoTitle}>
+            RGV <span className={styles.goldText}>9-1-1</span>
+          </span>
         </div>
         
         {/* Weather and tools section removed */}
