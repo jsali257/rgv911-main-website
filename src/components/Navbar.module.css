@@ -1,7 +1,7 @@
 /* Navigation Styles */
 /* Top Navigation Bar */
 .topNavbar {
-  background-color: #1e293b; /* Dark slate gray */
+  background-color: var(--rgv-blue-dark); /* Dark slate gray */
   color: var(--rgv-white);
   padding: 6px 0;
   width: 100%;
