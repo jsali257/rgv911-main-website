@@ -69,7 +69,7 @@
 
 .cardDescription {
   font-size: 1rem;
-  color: var(--rgv-gray);
+  color: #555;
   line-height: 1.6;
   flex-grow: 1;
   margin-bottom: 20px;
