@@ -74,7 +74,7 @@ export default function NotFound() {
           </motion.h1>
           
           <motion.p className={styles.description} variants={itemVariants}>
-            We're sorry, but the page you're looking for doesn't exist or has been moved.
+            We&apos;re sorry, but the page you&apos;re looking for doesn&apos;t exist or has been moved.
           </motion.p>
           
           <motion.div className={styles.linksSection} variants={itemVariants}>

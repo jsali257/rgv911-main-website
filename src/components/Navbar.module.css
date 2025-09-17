@@ -497,7 +497,7 @@
   left: -280px;
   width: 280px;
   height: 100vh;
-  background: #374d8a; /* Hardcoded dark blue color for consistency */
+  background: #14234d; /* Hardcoded dark blue color for consistency */
   box-shadow: var(--shadow-lg);
   z-index: 1000;
   transition: left 0.3s ease;
@@ -529,11 +529,26 @@
 
 .sidebarLogo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin-bottom: 30px;
   padding: 0 20px;
   gap: 10px;
+}
+
+.sidebarLogoTitle {
+  color: white;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+}
+
+.sidebarLogoNumber {
+  color: var(--rgv-gold);
+  margin-left: 6px;
 }
 
 .sidebarNav {
@@ -615,6 +630,8 @@
   border-left: 3px solid #fbc800;
   font-weight: 700;
   opacity: 1;
+  padding-left: 13px; /* Adjust for the border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .sidebarDropdown {

@@ -234,68 +234,42 @@ export default function Navbar() {
               </svg>
             </div>
             <div className={styles.dropdownMenu}>
-              {/* GIS Requests Section */}
-              <div className={styles.dropdownSection}>
-                <div className={styles.dropdownSectionTitle}>GIS Requests</div>
-                <Link href="/request-911-address" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                  Request a 911 Address
-                </Link>
-                <Link href="/subdivision-request" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
-                  </svg>
-                  Subdivision Request
-                </Link>
-                <Link href="/utility-request" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                  </svg>
-                  Utility Request
-                </Link>
-                <Link href="/street-name-request" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clipRule="evenodd" />
-                  </svg>
-                  Street Name Request
-                </Link>
-                <Link href="/city-request" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                  </svg>
-                  Cities/Precinct Request
-                </Link>
-              </div>
-              
-              {/* Pub Ed Requests Section */}
-              <div className={styles.dropdownSection}>
-                <div className={styles.dropdownSectionTitle}>Pub Ed Requests</div>
-                <Link href="https://survey123.arcgis.com/share/d3bd9eabf54e42f9a3b169e41e4d01a2" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
-                  </svg>
-                  Event Request
-                </Link>
-              </div>
-              
-              {/* IT Requests Section */}
-              <div className={styles.dropdownSection}>
-                <div className={styles.dropdownSectionTitle}>IT Requests</div>
-                <Link href="#" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
-                  </svg>
-                  User List Form
-                </Link>
-                <Link href="#" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z" clipRule="evenodd" />
-                  </svg>
-                  PSAP Training Form
-                </Link>
-              </div>
+              <Link href="/request-911-address" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                </svg>
+                Request a 911 Address
+              </Link>
+              <Link href="/subdivision-request" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                </svg>
+                Subdivision Request
+              </Link>
+              <Link href="/utility-request" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
+                </svg>
+                Utility Request
+              </Link>
+              <Link href="/street-name-request" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M4.083 9h1.946c.089-1.546.383-2.97.837-4.118A6.004 6.004 0 004.083 9zM10 2a8 8 0 100 16 8 8 0 000-16zm0 2c-.076 0-.232.032-.465.262-.238.234-.497.623-.737 1.182-.389.907-.673 2.142-.766 3.556h3.936c-.093-1.414-.377-2.649-.766-3.556-.24-.56-.5-.948-.737-1.182C10.232 4.032 10.076 4 10 4zm3.971 5c-.089-1.546-.383-2.97-.837-4.118A6.004 6.004 0 0115.917 9h-1.946zm-2.003 2H8.032c.093 1.414.377 2.649.766 3.556.24.56.5.948.737 1.182.233.23.389.262.465.262.076 0 .232-.032.465-.262.238-.234.498-.623.737-1.182.389-.907.673-2.142.766-3.556zm1.166 4.118c.454-1.147.748-2.572.837-4.118h1.946a6.004 6.004 0 01-2.783 4.118zm-6.268 0C6.412 13.97 6.118 12.546 6.03 11H4.083a6.004 6.004 0 002.783 4.118z" clipRule="evenodd" />
+                </svg>
+                Street Name Request
+              </Link>
+              <Link href="/city-request" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                </svg>
+                Cities/Precinct Request
+              </Link>
+              <a href="https://survey123.arcgis.com/share/d3bd9eabf54e42f9a3b169e41e4d01a2" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+                </svg>
+                Event Request
+              </a>
             </div>
           </li>
           <li className={styles.dropdown}>
@@ -350,25 +324,20 @@ export default function Navbar() {
           <Image
             src="/images/other/logo.png"
             alt="RGV911 Logo"
-            width={80}
-            height={80}
+            width={60}
+            height={60}
             priority
             quality={100}
             unoptimized
           />
           <div className={styles.logoText}>
-            <span className={styles.logoTitle}>RGV</span>
-            <span className={styles.logoNumber}>9-1-1</span>
+            <span className={styles.sidebarLogoTitle}>
+              RGV<span className={styles.sidebarLogoNumber}>9-1-1</span>
+            </span>
           </div>
         </div>
         
-        {/* Weather Section */}
-        <div className={styles.sidebarTools}>
-          <div className={styles.sidebarWeather}>
-            <Weather />
-          </div>
-          {/* Search bar removed */}
-        </div>
+        {/* Weather and tools section removed */}
         
         
         <div className={styles.sidebarNav}>
@@ -379,28 +348,28 @@ export default function Navbar() {
           Home
         </Link>
         
-        <Link href="/executive-director" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/executive-director" className={`${styles.sidebarLink} ${pathname === '/executive-director' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clipRule="evenodd" />
           </svg>
           Executive Director
         </Link>
         
-        <Link href="/board-of-managers" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/board-of-managers" className={`${styles.sidebarLink} ${pathname === '/board-of-managers' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
           </svg>
           Board of Managers
         </Link>
         
-        <Link href="/team" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/team" className={`${styles.sidebarLink} ${pathname === '/team' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z" />
           </svg>
           Meet Our Team
         </Link>
         
-        <Link href="/meetings" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/meetings" className={`${styles.sidebarLink} ${pathname === '/meetings' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
           </svg>
@@ -444,44 +413,24 @@ export default function Navbar() {
           </div>
           {requestsOpen && (
             <div className={styles.sidebarSubmenu}>
-              {/* GIS Requests */}
-              <div className={styles.sidebarSubmenuSection}>
-                <div className={styles.sidebarSubmenuTitle}>GIS Requests</div>
-                <Link href="/request-911-address" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Request a 911 Address
-                </Link>
-                <Link href="/subdivision-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Subdivision Request
-                </Link>
-                <Link href="/utility-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Utility Request
-                </Link>
-                <Link href="/street-name-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Street Name Request
-                </Link>
-                <Link href="/city-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Cities/Precinct Request
-                </Link>
-              </div>
-              
-              {/* Pub Ed Requests */}
-              <div className={styles.sidebarSubmenuSection}>
-                <div className={styles.sidebarSubmenuTitle}>Pub Ed Requests</div>
-                <a href="https://survey123.arcgis.com/share/d3bd9eabf54e42f9a3b169e41e4d01a2" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Event Request
-                </a>
-              </div>
-              
-              {/* IT Requests */}
-              <div className={styles.sidebarSubmenuSection}>
-                <div className={styles.sidebarSubmenuTitle}>IT Requests</div>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  User List Form
-                </Link>
-                <Link href="#" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  PSAP Training Form
-                </Link>
-              </div>
+              <Link href="/request-911-address" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Request a 911 Address
+              </Link>
+              <Link href="/subdivision-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Subdivision Request
+              </Link>
+              <Link href="/utility-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Utility Request
+              </Link>
+              <Link href="/street-name-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Street Name Request
+              </Link>
+              <Link href="/city-request" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Cities/Precinct Request
+              </Link>
+              <a href="https://survey123.arcgis.com/share/d3bd9eabf54e42f9a3b169e41e4d01a2" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Event Request
+              </a>
             </div>
           )}
         </div>
@@ -511,14 +460,14 @@ export default function Navbar() {
           )}
         </div>
         
-        <Link href="/about" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/about" className={`${styles.sidebarLink} ${pathname === '/about' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
           </svg>
           About Us
         </Link>
         
-        <Link href="/contact" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/contact" className={`${styles.sidebarLink} ${pathname === '/contact' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
             <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
@@ -557,7 +506,7 @@ export default function Navbar() {
           )}
         </div>
         
-        <Link href="/faq" className={styles.sidebarLink} onClick={() => setIsSidebarOpen(false)}>
+        <Link href="/faq" className={`${styles.sidebarLink} ${pathname === '/faq' ? styles.sidebarActive : ''}`} onClick={() => setIsSidebarOpen(false)}>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
             <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clipRule="evenodd" />
           </svg>
