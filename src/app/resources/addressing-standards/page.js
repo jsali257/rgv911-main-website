@@ -84,9 +84,9 @@ export default function AddressingStandardsPage() {
                   <h4>Problematic Road Names</h4>
                 </div>
                 <ul className={styles.exampleList}>
-                  <li>"Oak St" and "Oak Street" in same jurisdiction (duplicates)</li>
-                  <li>"Main Street" and "Maine Street" (sound alike)</li>
-                  <li>"Smith's Way" (contains apostrophe)</li>
+                  <li>&quot;Oak St&quot; and &quot;Oak Street&quot; in same jurisdiction (duplicates)</li>
+                  <li>&quot;Main Street&quot; and &quot;Maine Street&quot; (sound alike)</li>
+                  <li>&quot;Smith&apos;s Way&quot; (contains apostrophe)</li>
                 </ul>
               </div>
               
@@ -323,13 +323,13 @@ export default function AddressingStandardsPage() {
                   <FaTimesCircle className={styles.timesIcon} />
                   <h4>Overlap Problem Example</h4>
                 </div>
-                <p>Two different subdivisions both have a "123 Oak Street" because the street name "Oak" was allowed in multiple areas.</p>
+                <p>Two different subdivisions both have a &quot;123 Oak Street&quot; because the street name &quot;Oak&quot; was allowed in multiple areas.</p>
                 
                 <div className={styles.exampleHeader}>
                   <FaCheckCircle className={styles.checkIcon} />
                   <h4>Solution</h4>
                 </div>
-                <p>Rename one street to create unique addresses (e.g., "123 Red Oak Street" and "123 White Oak Street").</p>
+                <p>Rename one street to create unique addresses (e.g., &quot;123 Red Oak Street&quot; and &quot;123 White Oak Street&quot;).</p>
               </div>
               
               <h3 className={styles.subheading}>Addressing Gaps</h3>
