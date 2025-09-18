@@ -293,6 +293,22 @@ export default function Navbar() {
                 </svg>
                 Road Naming Guidelines
               </Link>
+              <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
+                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                  <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
+                </svg>
+                Addressing Standards
+              </Link>
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>Mascots</div>
+                <Link href="/public-education/cell-phone-sally" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                  </svg>
+                  Cell Phone Sally
+                </Link>
+              </div>
               <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
                 <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
@@ -450,6 +466,15 @@ export default function Navbar() {
               <Link href="/road-naming-guidelines" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                 Road Naming Guidelines
               </Link>
+              <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                Addressing Standards
+              </Link>
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>Mascots</div>
+                <Link href="/public-education/cell-phone-sally" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Cell Phone Sally
+                </Link>
+              </div>
               <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                 Data Downloads
               </a>
