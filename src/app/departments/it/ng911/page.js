@@ -165,14 +165,14 @@ export default function NG911Page() {
           <div className={styles.faqItem}>
             <h3>How will NG911 affect how I call for help?</h3>
             <p>
-              For most people, calling 911 will remain the same - you'll still dial 911 in an emergency. However, NG911 will add new ways to contact emergency services, such as texting, sending photos, or videos, which can be especially helpful in certain situations.
+              For most people, calling 911 will remain the same - you&apos;ll still dial 911 in an emergency. However, NG911 will add new ways to contact emergency services, such as texting, sending photos, or videos, which can be especially helpful in certain situations.
             </p>
           </div>
           
           <div className={styles.faqItem}>
             <h3>Is texting to 911 available now?</h3>
             <p>
-              Text-to-911 service is being implemented in phases. Please check our latest updates for availability in your area. Remember, "Call if you can, text if you can't" is still the recommended approach.
+              Text-to-911 service is being implemented in phases. Please check our latest updates for availability in your area. Remember, &quot;Call if you can, text if you can&apos;t&quot; is still the recommended approach.
             </p>
           </div>
           
