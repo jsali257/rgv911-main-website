@@ -168,11 +168,71 @@
     margin-bottom: 15px;
   }
   
-  .formSection {
+  .formLinkSection {
     background-color: #fff;
     border-radius: 12px;
     padding: 25px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .formDescription {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+  }
+  
+  .formLinkContainer {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+  }
+  
+  .formLinkButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--rgv-blue);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formLinkButton:hover {
+    background-color: var(--rgv-blue-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .formInstructions {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .formInstructions h3 {
+    font-size: 1.4rem;
+    color: var(--rgv-blue-dark);
+    margin-bottom: 15px;
+  }
+  
+  .instructionsList {
+    padding-left: 25px;
+    margin-bottom: 0;
+  }
+  
+  .instructionsList li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    color: #555;
   }
   
   .formTitle {
@@ -180,6 +240,55 @@
     color: var(--rgv-blue-dark);
     margin-bottom: 20px;
     text-align: center;
+  }
+  
+  .quickNavSection {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .quickNavTitle {
+    font-size: 1.3rem;
+    color: var(--rgv-blue-dark);
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  .quickNavButtons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .quickNavButton {
+    display: flex;
+    align-items: center;
+    background-color: var(--rgv-blue);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .quickNavButton:hover {
+    background-color: var(--rgv-blue-dark);
+    transform: translateY(-2px);
+  }
+  
+  .quickNavButton.current {
+    background-color: var(--rgv-gold);
+    pointer-events: none;
+  }
+  
+  .buttonIcon {
+    margin-right: 8px;
   }
   
   .surveyContainer {

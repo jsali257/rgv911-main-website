@@ -281,40 +281,110 @@ export default function Navbar() {
               </svg>
             </div>
             <div className={styles.dropdownMenu}>
-              <Link href="/resources/maps" className={styles.dropdownItem}>
-                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
-                </svg>
-                Maps
-              </Link>
-              <Link href="/road-naming-guidelines" className={styles.dropdownItem}>
-                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
-                </svg>
-                Road Naming Guidelines
-              </Link>
-              <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
-                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                  <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
-                </svg>
-                Addressing Standards
-              </Link>
+              {/* Maps Group */}
               <div className={styles.dropdownSection}>
-                <div className={styles.dropdownSectionTitle}>Mascots</div>
+                <div className={styles.dropdownSectionTitle}>Maps</div>
+                <Link href="/resources/maps" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
+                  </svg>
+                  Interactive Maps
+                </Link>
+                <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
+                  </svg>
+                  Addressing Maps
+                </Link>
+              </div>
+              
+              {/* Data Group */}
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>Data</div>
+                <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
+                  </svg>
+                  Data Downloads
+                </a>
+                <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
+                  </svg>
+                  Addressing Data
+                </Link>
+              </div>
+              
+              {/* Public Education Group */}
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>Public Education</div>
                 <Link href="/public-education/cell-phone-sally" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                   Cell Phone Sally
                 </Link>
+                <Link href="/departments/public-education" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                  </svg>
+                  Educational Resources
+                </Link>
               </div>
-              <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.dropdownItem}>
-                <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-                Data Downloads
-              </a>
+              
+              {/* GIS Group */}
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>GIS</div>
+                <Link href="/departments/gis" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
+                  </svg>
+                  GIS Department
+                </Link>
+                <Link href="/departments/gis/services" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                  GIS Services
+                </Link>
+              </div>
+              
+              {/* IT Group */}
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>IT</div>
+                <Link href="/departments/it" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
+                  </svg>
+                  IT Department
+                </Link>
+                <Link href="/departments/it/ng911" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5.5 2a3.5 3.5 0 015 0l7 7a3.5 3.5 0 010 5l-7 7a3.5 3.5 0 01-5 0l-7-7a3.5 3.5 0 010-5l7-7zm4.95.707a2.5 2.5 0 00-3.535 0l-7 7a2.5 2.5 0 000 3.535l7 7a2.5 2.5 0 003.535 0l7-7a2.5 2.5 0 000-3.535l-7-7z" clipRule="evenodd" />
+                    <path d="M10 8a2 2 0 100 4 2 2 0 000-4z" />
+                  </svg>
+                  Next Generation 911
+                </Link>
+              </div>
+              
+              {/* Guidelines */}
+              <div className={styles.dropdownSection}>
+                <div className={styles.dropdownSectionTitle}>Guidelines</div>
+                <Link href="/road-naming-guidelines" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 6a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm1 3a1 1 0 100 2h6a1 1 0 100-2H7z" clipRule="evenodd" />
+                  </svg>
+                  Road Naming Guidelines
+                </Link>
+                <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
+                    <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
+                  </svg>
+                  Addressing Standards
+                </Link>
+              </div>
             </div>
           </li>
           <li>
@@ -460,24 +530,71 @@ export default function Navbar() {
           </div>
           {resourcesOpen && (
             <div className={styles.sidebarSubmenu}>
-              <Link href="/resources/maps" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                Maps
-              </Link>
-              <Link href="/road-naming-guidelines" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                Road Naming Guidelines
-              </Link>
-              <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                Addressing Standards
-              </Link>
+              {/* Maps Group */}
               <div className={styles.sidebarSubmenuSection}>
-                <div className={styles.sidebarSubmenuTitle}>Mascots</div>
+                <div className={styles.sidebarSubmenuTitle}>Maps</div>
+                <Link href="/resources/maps" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Interactive Maps
+                </Link>
+                <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Addressing Maps
+                </Link>
+              </div>
+              
+              {/* Data Group */}
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>Data</div>
+                <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Data Downloads
+                </a>
+                <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Addressing Data
+                </Link>
+              </div>
+              
+              {/* Public Education Group */}
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>Public Education</div>
                 <Link href="/public-education/cell-phone-sally" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Cell Phone Sally
                 </Link>
+                <Link href="/departments/public-education" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Educational Resources
+                </Link>
               </div>
-              <a href="https://www.rgv911.org/search" target="_blank" rel="noopener noreferrer" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                Data Downloads
-              </a>
+              
+              {/* GIS Group */}
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>GIS</div>
+                <Link href="/departments/gis" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  GIS Department
+                </Link>
+                <Link href="/departments/gis/services" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  GIS Services
+                </Link>
+              </div>
+              
+              {/* IT Group */}
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>IT</div>
+                <Link href="/departments/it" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  IT Department
+                </Link>
+                <Link href="/departments/it/ng911" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Next Generation 911
+                </Link>
+              </div>
+              
+              {/* Guidelines */}
+              <div className={styles.sidebarSubmenuSection}>
+                <div className={styles.sidebarSubmenuTitle}>Guidelines</div>
+                <Link href="/road-naming-guidelines" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Road Naming Guidelines
+                </Link>
+                <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  Addressing Standards
+                </Link>
+              </div>
             </div>
           )}
         </div>

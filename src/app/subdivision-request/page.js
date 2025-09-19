@@ -25,6 +25,57 @@ export default function SubdivisionRequest() {
         <div className={styles.header}>
           <h1 className={styles.title}>Subdivision Addressing Request</h1>
           
+          <div className={styles.formLinkSection}>
+            <h2 className={styles.formTitle}>Subdivision Addressing Request Form</h2>
+            <p className={styles.formDescription}>Click the button below to access our Subdivision Addressing Request Form:</p>
+            
+            <div className={styles.formLinkContainer}>
+              <a 
+                href="https://survey123.arcgis.com/share/f6fc978790db4ed2b2328bcee05b6f51?version=3.21" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className={styles.formLinkButton}
+              >
+                <FaFileAlt className={styles.buttonIcon} /> Request Now!
+              </a>
+            </div>
+          </div>
+          
+          <div className={styles.quickNavSection}>
+            <h2 className={styles.quickNavTitle}>Need to submit a different request?</h2>
+            <div className={styles.quickNavButtons}>
+              <Link href="/request-911-address" className={styles.quickNavButton}>
+                <FaHome className={styles.buttonIcon} /> 911 Address Request
+              </Link>
+              <Link href="/subdivision-request" className={`${styles.quickNavButton} ${styles.current}`}>
+                <FaRoad className={styles.buttonIcon} /> Subdivision Request
+              </Link>
+              <Link href="/utility-request" className={styles.quickNavButton}>
+                <FaBolt className={styles.buttonIcon} /> Utility Request
+              </Link>
+              <Link href="/street-name-request" className={styles.quickNavButton}>
+                <FaRoad className={styles.buttonIcon} /> Street Name Request
+              </Link>
+              <Link href="/city-request" className={styles.quickNavButton}>
+                <FaCity className={styles.buttonIcon} /> City/Precinct Request
+              </Link>
+              <Link href="/road-naming-guidelines" className={styles.quickNavButton}>
+                <FaBook className={styles.buttonIcon} /> Road Naming Guidelines
+              </Link>
+            </div>
+          </div>
+          
+          <div className={styles.formInstructions}>
+            <h3>Form Instructions</h3>
+            <ol className={styles.instructionsList}>
+              <li>Click the button above to open the form in a new tab</li>
+              <li>Complete all required fields in the form</li>
+              <li>Upload your recorded plat and any other required documents</li>
+              <li>Submit the form when finished</li>
+              <li>You will receive a confirmation email once your request has been processed</li>
+            </ol>
+          </div>
+          
           <div className={styles.infoSection}>
             <div className={styles.infoIcon}>
               <FaInfoCircle />
@@ -92,51 +143,7 @@ export default function SubdivisionRequest() {
           </div>
         </div>
         
-        <div className={styles.quickNavSection}>
-          <h2 className={styles.quickNavTitle}>Need to submit a different request?</h2>
-          <div className={styles.quickNavButtons}>
-            <Link href="/request-911-address" className={styles.quickNavButton}>
-              <FaHome className={styles.buttonIcon} /> 911 Address Request
-            </Link>
-            <Link href="/subdivision-request" className={`${styles.quickNavButton} ${styles.current}`}>
-              <FaRoad className={styles.buttonIcon} /> Subdivision Request
-            </Link>
-            <Link href="/utility-request" className={styles.quickNavButton}>
-              <FaBolt className={styles.buttonIcon} /> Utility Request
-            </Link>
-            <Link href="/street-name-request" className={styles.quickNavButton}>
-              <FaRoad className={styles.buttonIcon} /> Street Name Request
-            </Link>
-            <Link href="/city-request" className={styles.quickNavButton}>
-              <FaCity className={styles.buttonIcon} /> City/Precinct Request
-            </Link>
-            <Link href="/road-naming-guidelines" className={styles.quickNavButton}>
-              <FaBook className={styles.buttonIcon} /> Road Naming Guidelines
-            </Link>
-          </div>
-        </div>
-        
-        <div className={styles.formSection}>
-          <h2 className={styles.formTitle}>Subdivision Addressing Request Form</h2>
-          
-          {isLoaded && (
-            <div className={styles.surveyContainer}>
-              <iframe 
-                src="https://survey123.arcgis.com/share/f6fc978790db4ed2b2328bcee05b6f51?version=3.21"
-                title="Subdivision Request Form"
-                className={styles.surveyFrame}
-                allow="geolocation"
-              />
-            </div>
-          )}
-          
-          {!isLoaded && (
-            <div className={styles.loadingContainer}>
-              <p>Loading form...</p>
-            </div>
-          )}
-        </div>
-        
+
         <div className={styles.homeButtonContainer}>
           <Link href="/" className={styles.homeButton}>
             <FaHome className={styles.buttonIcon} /> Back to Home

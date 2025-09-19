@@ -19,14 +19,14 @@ export default function StatsSection() {
     },
     {
       icon: <FaMapMarkedAlt className={styles.statIcon} />,
-      value: 15000,
+      value: 290271,
       label: "Addresses Assigned",
       suffix: "+",
       color: "#daa520" // gold
     },
     {
       icon: <FaUsers className={styles.statIcon} />,
-      value: 950000,
+      value: 934847,
       label: "Residents Served",
       suffix: "+",
       color: "#059669" // emerald
