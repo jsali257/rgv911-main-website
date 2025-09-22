@@ -293,12 +293,19 @@ export default function Navbar() {
                   </svg>
                   Interactive Maps
                 </Link>
+                <Link href="/resources/pdf-maps" className={styles.dropdownItem}>
+                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
+                    <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
+                    <path d="M8 11a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1zm0 4a1 1 0 011-1h2a1 1 0 110 2H9a1 1 0 01-1-1z" />
+                  </svg>
+                  PDF Maps
+                </Link>
                 <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
                   </svg>
-                  Printable PDF Maps
+                  Addressing Standards
                 </Link>
               </div>
               
@@ -521,8 +528,11 @@ export default function Navbar() {
                 <Link href="/resources/maps" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
                   Interactive Maps
                 </Link>
+                <Link href="/resources/pdf-maps" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
+                  PDF Maps
+                </Link>
                 <Link href="/resources/addressing-standards" className={styles.sidebarSublink} onClick={() => setIsSidebarOpen(false)}>
-                  Addressing Maps
+                  Addressing Standards
                 </Link>
               </div>
               
