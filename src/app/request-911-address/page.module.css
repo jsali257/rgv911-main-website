@@ -80,6 +80,30 @@
   color: var(--rgv-blue);
 }
 
+.ruralNotice {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff8f0;
+  border-radius: 8px;
+  border-left: 4px solid #f0ad4e;
+  display: flex;
+  align-items: flex-start;
+}
+
+.noticeIcon {
+  color: #f0ad4e;
+  font-size: 1.2rem;
+  margin-right: 10px;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.ruralNotice p {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
 .purposeSection {
   background-color: #fff;
   border-radius: 12px;

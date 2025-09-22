@@ -262,18 +262,19 @@ export default function ITDepartment() {
             
             <TeamGrid members={teamMembers} />
           </section>
+          
+          <ContactSection 
+            title="For More Information"
+            phone="(956) 682-3481"
+            email="it@rgv911.org"
+            departmentName="IT"
+            ctaText="Supporting Critical Emergency Communications Technology"
+            ctaDescription="Our IT department ensures that emergency communication systems remain operational 24/7. We provide the technical foundation that enables first responders to save lives throughout the Rio Grande Valley."
+            ctaButtonText="Learn More About Our IT Services"
+            ctaLink="/departments/it/ng911"
+          />
         </div>
       </main>
-      
-      <ContactSection 
-        title="Contact the IT Department"
-        phone="(956) 682-3481"
-        email="it@rgv911.org"
-        address="510 S Pleasantview Dr, Weslaco, TX 78596"
-        hours="Monday - Friday: 8:00 AM - 5:00 PM"
-        ctaText="Need technical assistance?"
-        ctaButtonText="Get in Touch"
-      />
       
       <Footer />
     </div>

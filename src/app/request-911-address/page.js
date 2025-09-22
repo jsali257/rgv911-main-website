@@ -82,13 +82,17 @@ export default function Request911Address() {
             <div className={styles.infoContent}>
               <h2>About This Form</h2>
               <p>
-                This request form is specifically for <strong>residents</strong> who need to:
+                This request form is specifically for <strong>rural residents outside city limits</strong> who need to:
               </p>
               <ul className={styles.infoList}>
                 <li><FaHome className={styles.listIcon} /> Request a new 911 physical address</li>
                 <li><FaFileAlt className={styles.listIcon} /> Verify their existing 911 physical address</li>
                 <li><FaBuilding className={styles.listIcon} /> Receive an official 911 physical address letter</li>
               </ul>
+              <div className={styles.ruralNotice}>
+                <FaExclamationTriangle className={styles.noticeIcon} />
+                <p><strong>Important:</strong> RGV9-1-1 only handles addressing for properties located <strong>outside city limits</strong>. If your property is located within city limits, please contact your local city hall for addressing services.</p>
+              </div>
             </div>
           </div>
           
@@ -117,13 +121,17 @@ export default function Request911Address() {
                 This form is <strong>not intended</strong> for:
               </p>
               <ul>
+                <li>Properties located <strong>within city limits</strong></li>
                 <li>Developers</li>
                 <li>Engineers</li>
                 <li>Cities</li>
                 <li>Precincts</li>
               </ul>
               <p>
-                If you represent one of these entities, please contact us directly as we have separate request processes for these purposes.
+                If your property is located within city limits, please contact your local city hall for addressing services.
+              </p>
+              <p>
+                If you represent one of the other entities listed above, please contact us directly as we have separate request processes for these purposes.
               </p>
             </div>
           </div>

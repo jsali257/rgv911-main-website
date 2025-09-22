@@ -41,8 +41,8 @@ export default function Footer() {
         
         <div className={styles.footerSection}>
           <h3>Contact Us</h3>
-          <p>301 W. Railroad St.</p>
-          <p>Weslaco, TX 78596</p>
+          <p>1912 Joe Stephens Ave A.</p>
+          <p>Weslaco, TX 78599</p>
           <p>Phone: (956) 682-3481</p>
           <p>Email: info@rgv911.org</p>
           
@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className={styles.locationMap}>
             <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.6923582576747!2d-97.99425692393055!3d26.16063608971204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866578ef3a5e9d5d%3A0x7c0b7a2e2c3b4c5d!2s301%20W%20Railroad%20St%2C%20Weslaco%2C%20TX%2078596!5e0!3m2!1sen!2sus!4v1694733456789!5m2!1sen!2sus" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.5026063780785!2d-97.99548792393042!3d26.16640308970902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866578c1c8a6c7e9%3A0x8a5a695a71b1fe1f!2s1912%20Joe%20Stephens%20Ave%20A%2C%20Weslaco%2C%20TX%2078599!5e0!3m2!1sen!2sus!4v1695337631456!5m2!1sen!2sus" 
               width="100%" 
               height="200" 
               style={{ border: 0, marginTop: '15px', borderRadius: '8px' }} 

@@ -19,54 +19,63 @@ export default function MapsPage() {
       title: "RGV911 Public Map Viewer",
       description: "Interactive map showing emergency service zones, addresses, and public safety information for Hidalgo and Willacy counties.",
       thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=5c91b8fa8c8b4b5e8f5f7b7a9e7b3f1a",
+      url: "https://experience.arcgis.com/experience/2f24bc7286e240f79085a892759f70b5",
       category: "public",
       tags: ["interactive", "emergency services", "addresses"]
     },
     {
       id: 2,
-      title: "Street Name Lookup",
+      title: "Emergency Responsers Map",
       description: "Search for street names and locations throughout the RGV911 service area.",
-      thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=2c91b8fa8c8b4b5e8f5f7b7a9e7b3f1b",
+      thumbnail: "/images/other/EmergencyResponders.png",
+      url: "https://experience.arcgis.com/experience/b9f4000ee3c54c9d970c6456e8955733",
       category: "public",
-      tags: ["search", "streets", "lookup"]
+      tags: ["boundaries", "ems", "emergency services"]
     },
     {
       id: 3,
-      title: "Emergency Service Zones",
+      title: "Hidalgo County Precinct and ESD Map",
       description: "Map showing the boundaries of emergency service zones in Hidalgo and Willacy counties.",
-      thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=3c91b8fa8c8b4b5e8f5f7b7a9e7b3f1c",
+      thumbnail: "/images/other/ESD.png",
+      url: "https://experience.arcgis.com/experience/c4b5492de50a49cc85699d3569ae0035",
       category: "emergency",
-      tags: ["zones", "boundaries", "emergency services"]
+      tags: ["zones", "boundaries", "esd"]
     },
     {
       id: 4,
-      title: "Address Point Finder",
+      title: "EMS Map",
       description: "Tool for locating and verifying address points in the RGV911 system.",
-      thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=4c91b8fa8c8b4b5e8f5f7b7a9e7b3f1d",
+      thumbnail: "/images/other/EMS.png",
+      url: "https://rgv911.maps.arcgis.com/apps/webappviewer/index.html?id=ba0e0e4ee3ae48eaa24f74990bac8832",
       category: "public",
-      tags: ["addresses", "search", "verification"]
+      tags: ["ems", "search", "emergency services"]
     },
     {
       id: 5,
       title: "PSAP Coverage Map",
       description: "Map showing the coverage areas for Public Safety Answering Points in the region.",
-      thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=5c91b8fa8c8b4b5e8f5f7b7a9e7b3f1e",
+      thumbnail: "/images/other/PSAP.png",
+      url: "https://experience.arcgis.com/experience/d4a16a3b04ce475b89078a34f9a5f1eb",
       category: "emergency",
-      tags: ["PSAP", "coverage", "emergency services"]
+      tags: ["psap", "coverage", "emergency services"]
     },
     {
       id: 6,
-      title: "Subdivision Lookup",
+      title: "Mexico Calls 2023",
       description: "Find and view subdivision boundaries and information.",
-      thumbnail: "/images/other/gisMapBG.png",
-      url: "https://gis.rgv911.org/portal/apps/webappviewer/index.html?id=6c91b8fa8c8b4b5e8f5f7b7a9e7b3f1f",
+      thumbnail: "/images/other/MexicoCalls.png",
+      url: "https://experience.arcgis.com/experience/0837c3159a754a6d8abdf5e1e616d632",
       category: "public",
-      tags: ["subdivisions", "boundaries", "lookup"]
+      tags: ["calls", "lookup", "emergency services"]
+    },
+    {
+      id: 7,
+      title: "Hidalgo County Echo Sectors",
+      description: "Find and view subdivision boundaries and information.",
+      thumbnail: "/images/other/EchoSectors.png",
+      url: "https://rgv911.maps.arcgis.com/apps/webappviewer/index.html?id=d01c01470bb243e2b16ead8f899fbbc2",
+      category: "public",
+      tags: ["echo sectors", "boundaries", "emergency services"]
     }
   ];
   

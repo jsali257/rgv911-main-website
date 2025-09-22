@@ -23,7 +23,7 @@ export default function Home() {
     <AnimationProvider>
       <div className={styles.page}>
         <Navbar />
-        <Hero />
+        <Hero videoSrc="/videos/background/VideoBackground.mp4" />
         <QuickLinks />
         <WhoWeAre />
         <Addressing />

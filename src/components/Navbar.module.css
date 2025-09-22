@@ -200,6 +200,16 @@
 .weatherContainer {
   display: flex;
   align-items: center;
+  margin: 0 10px;
+  padding: 0 8px;
+  height: 28px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.weatherContainer:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Main Navigation Bar */
@@ -920,7 +930,8 @@
   /* Search input removed */
   
   .weatherContainer {
-    margin-right: 0;
+    margin: 0 5px;
+    order: -1; /* Move weather before other elements on mobile */
   }
   
   .socialLinks {

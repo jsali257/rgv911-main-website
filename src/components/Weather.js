@@ -16,9 +16,8 @@ export default function Weather() {
         const lat = 26.1595;
         const lon = -97.9908;
         
-        // Replace 'YOUR_API_KEY' with your actual OpenWeather API key
-        // You should store this in an environment variable in production
-        const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API_KEY;
+        // Using the environment variable for the OpenWeather API key
+        const apiKey = process.env.NEXT_PUBLIC_OPENWEATHER_API;
         
         const response = await fetch(
           `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
@@ -53,7 +52,13 @@ export default function Weather() {
   const temp = Math.round(weather.main.temp);
   const description = weather.weather[0].description;
   const icon = weather.weather[0].icon;
-  const iconUrl = `http://openweathermap.org/img/wn/${icon}.png`;
+  
+  // For night icons (ending with 'n'), use the day version instead for better visibility
+  // This ensures we don't get dark icons on dark background
+  const iconCode = icon.endsWith('n') ? icon.replace('n', 'd') : icon;
+  
+  // Use the 2x version of the icon for better quality and visibility
+  const iconUrl = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
   return (
     <div className={styles.weatherWidget}>
@@ -62,10 +67,12 @@ export default function Weather() {
           src={iconUrl} 
           alt={description} 
           className={styles.weatherIcon}
-          width={50}
-          height={50}
-          quality={90}
+          width={24}
+          height={24}
+          quality={100}
           unoptimized
+          priority
+          style={{ filter: 'brightness(1.5)' }} /* Additional inline styling for better visibility */
         />
         <div className={styles.weatherInfo}>
           <div className={styles.weatherTemp}>{temp}°</div>

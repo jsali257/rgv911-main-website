@@ -47,27 +47,42 @@
   align-items: center;
 }
 
-.backgroundSlider {
+.videoBackground {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 1;
+  overflow: hidden;
 }
 
-.backgroundSlide {
+@keyframes slowZoom {
+  0% { transform: translateX(-50%) translateY(-50%) scale(1); }
+  50% { transform: translateX(-50%) translateY(-50%) scale(1.05); }
+  100% { transform: translateX(-50%) translateY(-50%) scale(1); }
+}
+
+@keyframes videoFade {
+  from { opacity: 0; }
+  to { opacity: 0.3; }
+}
+
+.backgroundVideo {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1.5s ease-in-out;
-}
-
-.backgroundSlide.active {
-  opacity: 1;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+  opacity: 0.5; /* Make visible by default */
+  animation: slowZoom 20s infinite ease-in-out;
+  filter: blur(1px); /* Slight blur to hide potential jerkiness */
+  transition: opacity 1.5s ease;
+  z-index: 1; /* Ensure it's above any background but below overlay */
 }
 
 .overlay {

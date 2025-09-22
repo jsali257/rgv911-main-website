@@ -37,6 +37,9 @@
   width: 20px;
   height: 20px;
   margin-right: 4px;
+  filter: brightness(1.2) contrast(1.2); /* Enhance visibility of icons */
+  background-color: transparent !important; /* Ensure no background color */
+  object-fit: contain; /* Ensure icon fits properly */
 }
 
 .weatherInfo {

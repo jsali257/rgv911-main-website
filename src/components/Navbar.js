@@ -90,6 +90,9 @@ export default function Navbar() {
             <div className={styles.navbarSearchContainer}>
               <NavbarSearch />
             </div>
+            <div className={styles.weatherContainer}>
+              <Weather />
+            </div>
             <div className={styles.phoneNumber}>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
@@ -295,7 +298,7 @@ export default function Navbar() {
                     <path fillRule="evenodd" d="M5 4a1 1 0 011-1h8a1 1 0 011 1v1a1 1 0 01-1 1H6a1 1 0 01-1-1V4zm4 3a1 1 0 00-1 1v1a1 1 0 001 1h2a1 1 0 001-1V8a1 1 0 00-1-1H9z" clipRule="evenodd" />
                     <path d="M4 12a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zm0 4a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1z" />
                   </svg>
-                  Addressing Maps
+                  Printable PDF Maps
                 </Link>
               </div>
               
@@ -308,12 +311,6 @@ export default function Navbar() {
                   </svg>
                   Data Downloads
                 </a>
-                <Link href="/resources/addressing-standards" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" />
-                  </svg>
-                  Addressing Data
-                </Link>
               </div>
               
               {/* Public Education Group */}
@@ -336,12 +333,6 @@ export default function Navbar() {
               {/* GIS Group */}
               <div className={styles.dropdownSection}>
                 <div className={styles.dropdownSectionTitle}>GIS</div>
-                <Link href="/departments/gis" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M12 1.586l-4 4v12.828l4-4V1.586zM3.707 3.293A1 1 0 002 4v10a1 1 0 00.293.707L6 18.414V5.586L3.707 3.293zM17.707 5.293L14 1.586v12.828l2.293 2.293A1 1 0 0018 16V6a1 1 0 00-.293-.707z" clipRule="evenodd" />
-                  </svg>
-                  GIS Department
-                </Link>
                 <Link href="/departments/gis/services" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
@@ -353,12 +344,6 @@ export default function Navbar() {
               {/* IT Group */}
               <div className={styles.dropdownSection}>
                 <div className={styles.dropdownSectionTitle}>IT</div>
-                <Link href="/departments/it" className={styles.dropdownItem}>
-                  <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M3 5a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2h-2.22l.123.489.804.804A1 1 0 0113 18H7a1 1 0 01-.707-1.707l.804-.804L7.22 15H5a2 2 0 01-2-2V5zm5.771 7H5V5h10v7H8.771z" clipRule="evenodd" />
-                  </svg>
-                  IT Department
-                </Link>
                 <Link href="/departments/it/ng911" className={styles.dropdownItem}>
                   <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M5.5 2a3.5 3.5 0 015 0l7 7a3.5 3.5 0 010 5l-7 7a3.5 3.5 0 01-5 0l-7-7a3.5 3.5 0 010-5l7-7zm4.95.707a2.5 2.5 0 00-3.535 0l-7 7a2.5 2.5 0 000 3.535l7 7a2.5 2.5 0 003.535 0l7-7a2.5 2.5 0 000-3.535l-7-7z" clipRule="evenodd" />
