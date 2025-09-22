@@ -19,7 +19,7 @@ export default function PDFMapsPage() {
       title: "City of Elsa Map",
       description: "Detailed map of the City of Elsa showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfElsa.PNG",
-      url: "/images/departments/gis/maps/CityOfElsaMap.pdf",
+      url: "/pdf/maps/CityOfElsaMap.pdf",
       category: "city",
       tags: ["elsa", "city map", "streets"]
     },
@@ -28,7 +28,7 @@ export default function PDFMapsPage() {
       title: "City of Edcouch Map",
       description: "Detailed map of the City of Edcouch showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/Edcouch.PNG",
-      url: "/images/departments/gis/maps/EdcouchMap.pdf",
+      url: "/pdf/maps/EdcouchMap.pdf",
       category: "city",
       tags: ["edcouch", "city map", "streets"]
     },
@@ -37,7 +37,7 @@ export default function PDFMapsPage() {
       title: "La Villa Map",
       description: "Detailed map of La Villa showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/LaVilla.PNG",
-      url: "/images/departments/gis/maps/laVillaMap.pdf",
+      url: "/pdf/maps/laVillaMap.pdf",
       category: "city",
       tags: ["la villa", "city map", "streets"]
     },
@@ -46,7 +46,7 @@ export default function PDFMapsPage() {
       title: "City Of Mercedes Map",
       description: "Detailed map of the City of Mercedes showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfMercedes.PNG",
-      url: "/images/departments/gis/maps/CityOfMercedesMap.pdf",
+      url: "/pdf/maps/CityOfMercedesMap.pdf",
       category: "city",
       tags: ["city of mercedes", "city map", "streets"]
     },
@@ -55,7 +55,7 @@ export default function PDFMapsPage() {
       title: "City Of Weslaco Map",
       description: "Detailed map of the City of Weslaco showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfWeslaco.PNG",
-      url: "/images/departments/gis/maps/CityOfWeslacoMap.pdf",
+      url: "/pdf/maps/CityOfWeslacoMap.pdf",
       category: "city",
       tags: ["city of weslaco", "city map", "streets"]
     },
@@ -64,7 +64,7 @@ export default function PDFMapsPage() {
       title: "City Of Donna Map",
       description: "Detailed map of the City of Donna showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfDonna.PNG",
-      url: "/images/departments/gis/maps/CityOfDonnaMap.pdf",
+      url: "/pdf/maps/CityOfDonnaMap.pdf",
       category: "city",
       tags: ["city of donna", "city map", "streets"]
     },
@@ -73,7 +73,7 @@ export default function PDFMapsPage() {
       title: "City Of Alamo Map",
       description: "Detailed map of the City of Alamo showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfAlamo.PNG",
-      url: "/images/departments/gis/maps/CityOfAlamoMap.pdf",
+      url: "/pdf/maps/CityOfAlamoMap.pdf",
       category: "city",
       tags: ["city of alamo", "city map", "streets"]
     },
@@ -82,7 +82,7 @@ export default function PDFMapsPage() {
       title: "City Of San Juan Map",
       description: "Detailed map of the City of San Juan showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfSanJuan.PNG",
-      url: "/images/departments/gis/maps/CityOfSanJuanMap.pdf",
+      url: "/pdf/maps/CityOfSanJuanMap.pdf",
       category: "city",
       tags: ["city of san juan", "city map", "streets"]
     },
@@ -91,7 +91,7 @@ export default function PDFMapsPage() {
       title: "City Of Pharr Map",
       description: "Detailed map of the City of Pharr showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfPharr.PNG",
-      url: "/images/departments/gis/maps/CityOfPharrMap.pdf",
+      url: "/pdf/maps/CityOfPharrMap.pdf",
       category: "city",
       tags: ["city of pharr", "city map", "streets"]
     },
