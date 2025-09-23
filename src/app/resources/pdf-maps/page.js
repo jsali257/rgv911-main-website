@@ -21,7 +21,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfElsa.PNG",
       url: "/pdf/maps/CityOfElsaMap.pdf",
       category: "city",
-      tags: ["elsa", "city map", "streets"]
+      tags: ["elsa", "city map", "streets", "hidalgo county"]
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/Edcouch.PNG",
       url: "/pdf/maps/EdcouchMap.pdf",
       category: "city",
-      tags: ["edcouch", "city map", "streets"]
+      tags: ["edcouch", "city map", "streets", "hidalgo county"]
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/LaVilla.PNG",
       url: "/pdf/maps/laVillaMap.pdf",
       category: "city",
-      tags: ["la villa", "city map", "streets"]
+      tags: ["la villa", "city map", "streets", "hidalgo county"]
     },
     {
       id: 4,
@@ -48,7 +48,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfMercedes.PNG",
       url: "/pdf/maps/CityOfMercedesMap.pdf",
       category: "city",
-      tags: ["city of mercedes", "city map", "streets"]
+      tags: ["city of mercedes", "city map", "streets", "hidalgo county"]
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfWeslaco.PNG",
       url: "/pdf/maps/CityOfWeslacoMap.pdf",
       category: "city",
-      tags: ["city of weslaco", "city map", "streets"]
+      tags: ["city of weslaco", "city map", "streets", "hidalgo county"]
     },
     {
       id: 7,
@@ -66,7 +66,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfDonna.PNG",
       url: "/pdf/maps/CityOfDonnaMap.pdf",
       category: "city",
-      tags: ["city of donna", "city map", "streets"]
+      tags: ["city of donna", "city map", "streets", "hidalgo county"]
     },
     {
       id: 8,
@@ -75,7 +75,7 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfAlamo.PNG",
       url: "/pdf/maps/CityOfAlamoMap.pdf",
       category: "city",
-      tags: ["city of alamo", "city map", "streets"]
+      tags: ["city of alamo", "city map", "streets", "hidalgo county"]
     },
     {
       id: 9,
@@ -84,17 +84,207 @@ export default function PDFMapsPage() {
       thumbnail: "/images/other/CityOfSanJuan.PNG",
       url: "/pdf/maps/CityOfSanJuanMap.pdf",
       category: "city",
-      tags: ["city of san juan", "city map", "streets"]
+      tags: ["city of san juan", "city map", "streets", "hidalgo county"]
     },
     {
       id: 10,
       title: "City Of Pharr Map",
       description: "Detailed map of the City of Pharr showing streets, boundaries, and key landmarks.",
       thumbnail: "/images/other/CityOfPharr.PNG",
-      url: "/pdf/maps/CityOfPharrMap.pdf",
+      url: "/pdf/maps/CityOfPharrMap.pdf",  
       category: "city",
-      tags: ["city of pharr", "city map", "streets"]
+      tags: ["city of pharr", "city map", "streets", "hidalgo county"]
     },
+    {
+      id: 11,
+      title: "City Of Mission Map",
+      description: "Detailed map of the City of Mission showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfMission.PNG",
+      url: "/pdf/maps/CityOfMissionMap.pdf",
+      category: "city",
+      tags: ["city of mission", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 12,
+      title: "City Of Alton Map",
+      description: "Detailed map of the City of Alton showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfAlton.PNG",
+      url: "/pdf/maps/CityOfAltonMap.pdf",
+      category: "city",
+      tags: ["city of alton", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 13,
+      title: "City Of McAllen Map",
+      description: "Detailed map of the City of McAllen showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfMcAllen.PNG",
+      url: "/pdf/maps/CityOfMcAllenMap.pdf",
+      category: "city",
+      tags: ["city of mcallen", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 14,
+      title: "City Of Palmview Map",
+      description: "Detailed map of the City of Palmview showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfPalmview.PNG",
+      url: "/pdf/maps/CityOfPalmviewMap.pdf",
+      category: "city",
+      tags: ["city of palmview", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 15,
+      title: "City Of Hidalgo Map",
+      description: "Detailed map of the City of Hidalgo showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfHidalgo.PNG",
+      url: "/pdf/maps/CityOfHidalgoMap.pdf",
+      category: "city",
+      tags: ["city of hidalgo", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 16,
+      title: "City Of Granjeno Map",
+      description: "Detailed map of the City of Granjeno showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfGranjeno.PNG",
+      url: "/pdf/maps/CityOfGranjenoMap.pdf",
+      category: "city",
+      tags: ["city of granjeno", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 17,
+      title: "City Of Palmhurst Map",
+      description: "Detailed map of the City of Palmhurst showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfPalmhurst.PNG",
+      url: "/pdf/maps/CityOfPalmhurstMap.pdf",
+      category: "city",
+      tags: ["city of palmhurst", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 18,
+      title: "City Of Edinburg Map",
+      description: "Detailed map of the City of Edinburg showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfEdinburg.PNG",
+      url: "/pdf/maps/CityOfEdinburgMap.pdf",
+      category: "city",
+      tags: ["city of edinburg", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 19,
+      title: "City Of Penitas Map",
+      description: "Detailed map of the City of Penitas showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfPenitas.PNG",
+      url: "/pdf/maps/CityOfPenitasMap.pdf",
+      category: "city",
+      tags: ["city of penitas", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 20,
+      title: "City Of La Joya Map",
+      description: "Detailed map of the City of La Joya showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfLaJoya.PNG",
+      url: "/pdf/maps/CityOfLaJoyaMap.pdf",
+      category: "city",
+      tags: ["city of la joya", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 21,
+      title: "Sullivan City Map",
+      description: "Detailed map of the Sullivan City showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/SullivanCity.PNG",
+      url: "/pdf/maps/SullivanCityMap.pdf",
+      category: "city",
+      tags: ["sullivan city", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 22,
+      title: "City Of Lyford Map",
+      description: "Detailed map of the City of Lyford showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfLyford.PNG",
+      url: "/pdf/maps/CityOfLyfordMap.pdf",
+      category: "city",
+      tags: ["city of lyford", "city map", "streets", "willacy county"]
+    },
+    {
+      id: 23,
+      title: "City Of Raymondville Map",
+      description: "Detailed map of the City of Raymondville showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfRaymondville.PNG",
+      url: "/pdf/maps/CityOfRaymondvilleMap.pdf",
+      category: "city",
+      tags: ["city of raymondville", "city map", "streets", "willacy county"]
+    },
+    {
+      id: 24,
+      title: "City Of Progreso Map",
+      description: "Detailed map of the City of Progreso showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfProgreso.PNG",
+      url: "/pdf/maps/CityOfProgresoMap.pdf",
+      category: "city",
+      tags: ["city of progreso", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 25,
+      title: "Progreso Lakes Map",
+      description: "Detailed map of Progreso Lakes showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/ProgresoLakes.PNG",
+      url: "/pdf/maps/ProgresoLakesMap.pdf",
+      category: "city",
+      tags: ["progreso lakes", "city map", "streets", "hidalgo county"]
+    },
+    {
+      id: 26,
+      title: "City Of San Perlita Map",
+      description: "Detailed map of the City of San Perlita showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/CityOfSanPerlita.PNG",
+      url: "/pdf/maps/CityOfSanPerlitaMap.pdf",
+      category: "city",
+      tags: ["city of san perlita", "city map", "streets", "willacy county"]
+    },
+    {
+      id: 27,
+      title: "ETJ Boundary Map",
+      description: "Detailed map of the ETJ Boundary showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/ETJBoundary.PNG",
+      url: "/pdf/maps/ETJBoundaryMap.pdf",
+      category: "boundary",
+      tags: ["etj boundary", "boundary map", "streets"]
+    },
+    {
+      id: 28,
+      title: "EMS Boundary Map",
+      description: "Detailed map of the EMS Boundary showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/EMSBoundary.PNG",
+      url: "/pdf/maps/EMSBoundaryMap.pdf",
+      category: "boundary",
+      tags: ["ems boundary", "boundary map", "streets"]
+    },
+    {
+      id: 29,
+      title: "Fire Boundary Map",
+      description: "Detailed map of the Fire Boundary showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/FireBoundary.PNG",
+      url: "/pdf/maps/FireBoundaryMap.pdf",
+      category: "boundary",
+      tags: ["fire boundary", "boundary map", "streets"]
+    },
+    {
+      id: 30,
+      title: "ESN Boundary Map",
+      description: "Detailed map of the ESN Boundary showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/ESNBoundary.PNG",
+      url: "/pdf/maps/ESNBoundaryMap.pdf",
+      category: "boundary",
+      tags: ["esn boundary", "boundary map", "streets"]
+    },
+    {
+      id: 31,
+      title: "PSAP Boundary Map",
+      description: "Detailed map of the PSAP Boundary showing streets, boundaries, and key landmarks.",
+      thumbnail: "/images/other/PSAPBoundary.PNG",
+      url: "/pdf/maps/PSAPBoundaryMap.pdf",
+      category: "boundary",
+      tags: ["psap boundary", "boundary map", "streets"]
+    },
+
 
     // Additional maps can be added here as they become available
   ];
@@ -138,6 +328,12 @@ export default function PDFMapsPage() {
               City Maps
             </button>
             {/* Additional filter buttons can be added as needed */}
+            <button 
+              className={`${styles.filterButton} ${activeFilter === 'boundary' ? styles.active : ''}`}
+              onClick={() => setActiveFilter('boundary')}
+            >
+              Boundary Maps
+            </button>
           </div>
           
           <div className={styles.mapsGrid}>
