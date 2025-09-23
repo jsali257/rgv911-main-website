@@ -476,3 +476,27 @@
     font-size: 1rem;
   }
 }
+
+/* CTA Button for Training Tab */
+.ctaContainer {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--rgv-blue);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ctaButton:hover {
+  background-color: var(--rgv-gold);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}

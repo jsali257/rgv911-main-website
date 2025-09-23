@@ -24,7 +24,8 @@ import {
   FaHeadset,
   FaDatabase,
   FaLock,
-  FaChartLine
+  FaChartLine,
+  FaGraduationCap
 } from 'react-icons/fa';
 
 export default function ITDepartment() {
@@ -184,6 +185,36 @@ export default function ITDepartment() {
           </p>
         </div>
       )
+    },
+    {
+      id: "training",
+      label: "Training Programs",
+      icon: <FaGraduationCap />,
+      content: (
+        <div className={styles.tabContent}>
+          <h3>Telecommunicator Training Programs</h3>
+          <p>
+            Our IT Department offers specialized training programs for telecommunicators to ensure they can effectively utilize all features of our emergency communication systems.
+          </p>
+          
+          <ul className={styles.infrastructureList}>
+            <li><strong>Power 911 Basics</strong> - Introduction to the Power 911 system for new telecommunicators</li>
+            <li><strong>MapFlex Navigation</strong> - Comprehensive training on using MapFlex for location identification</li>
+            <li><strong>Call Handling Advanced Techniques</strong> - Advanced training for experienced telecommunicators</li>
+            <li><strong>Emergency System Troubleshooting</strong> - Learn to identify and resolve common technical issues</li>
+          </ul>
+          
+          <p>
+            Our training sessions focus on practical skills and real-world scenarios that telecommunicators encounter daily. Each program is conducted by experienced IT professionals who understand both the technical aspects of the systems and the critical nature of emergency communications.
+          </p>
+          
+          <div className={styles.ctaContainer}>
+            <Link href="/departments/it/training" className={styles.ctaButton}>
+              View Training Programs
+            </Link>
+          </div>
+        </div>
+      )
     }
   ];
 
@@ -270,8 +301,8 @@ export default function ITDepartment() {
             departmentName="IT"
             ctaText="Supporting Critical Emergency Communications Technology"
             ctaDescription="Our IT department ensures that emergency communication systems remain operational 24/7. We provide the technical foundation that enables first responders to save lives throughout the Rio Grande Valley."
-            ctaButtonText="Learn More About Our IT Services"
-            ctaLink="/departments/it/ng911"
+            ctaButtonText="Learn About Our Training Programs"
+            ctaLink="/departments/it/training"
           />
         </div>
       </main>
